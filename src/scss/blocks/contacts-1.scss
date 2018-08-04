@@ -1,0 +1,55 @@
+.contacts-1 {
+  --scale: 1;
+  color: $color-base;
+  font-size: calc-size(14);
+  line-height: (18/14);
+  display: block;
+
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    font-weight: 700;
+    line-height: (20/16);
+    margin: 0 0 1em;
+  }
+
+  h3, .h3 {
+    font-size: calc-size(16);
+  }
+
+  hr {
+    height: calc-size(3);
+    border: 0;
+    margin: 2em 0;
+    background: linear-gradient(to right, #f9a801, #f9a801) no-repeat 0 0/30px 100%;
+  }
+
+  p {
+    margin: 0 0 1em;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__tel {
+    font-size: calc-size(18);
+  }
+
+  @include media-breakpoint-down(sm) {
+    --scale: 12/14;
+    text-align: center;
+
+    hr {
+      background-position: center;
+    }
+  }
+}

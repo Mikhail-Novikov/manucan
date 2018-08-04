@@ -1,0 +1,32 @@
+.link-block{
+	max-width: 465px;
+	min-height: 220px;
+	padding: 30px;
+	box-shadow: 0 40px 90px rgba(88, 90, 112, 0.5);
+	background-image: linear-gradient(217deg, #e86656 0%, #002ca6 100%);	
+	&__title{
+		color: #d2d2d2;
+		font-family: "Montserrat";
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 1.1;
+		letter-spacing: 2px;
+		margin: 0 0 15px;
+	}
+	&__text{
+		color: #ffffff;
+		font-family: "Montserrat";
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 24px;
+		max-width: 320px;
+	}
+	&__arr {
+		position: absolute;
+		right: 65px;
+		& svg{
+			width: 20px;
+			vertical-align: middle;
+		}
+	}
+}

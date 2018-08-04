@@ -1,0 +1,34 @@
+mixin footer
+  +b.FOOTER.footer&attributes(attributes)
+    +e.__inner-top.container-fluid.mw-lg
+      .row
+        .col-2.d-flex.flex-column.flex-lg-row.align-items-lg-center.justify-content-between
+          +e.__logo MANUCAN
+
+        .col-8.d-lg-flex.align-items-lg-center.justify-content-end
+          +e.NAV.__menu
+            +e.__menu-inner
+              +e.A.__menu-item(href='') Обо мне
+              +e.A.__menu-item(href='') Проекты
+              +e.A.__menu-item(href='') Блог
+              +e.A.__menu-item(href='') В СМИ
+              +e.A.__menu-item(href='') Фото
+              +e.A.__menu-item(href='') Мероприятия
+              +e.A.__menu-item(href='') Контакты
+        .col-2.d-flex.flex-column.flex-lg-row.align-items-lg-center.justify-content-end
+          +e.__soc-net
+            +e.__soc-net-inner
+              +e.A.__soc-net-item--vk(href='' target='_blank' title='VK')
+                +icon-svg('vk')
+              +e.A.__soc-net-item--fb(href='' target='_blank' title='Facebook')
+                +icon-svg('fb')
+              +e.A.__soc-net-item--tw(href='' target='_blank' title='Twitter')
+                +icon-svg('tw')
+              +e.A.__soc-net-item--tw(href='' target='_blank' title='Twitter')
+                +icon-svg('tw')
+
+    +e.__inner-bottom.container-fluid.mw-lg
+      +e.__copyright ©2018 Все права защищены
+      +e.__dev Разработка сайта
+        +e.A.__dev-link(href='' target='_blank')
+          +icon-svg('empire-logo-blue').__dev-logo

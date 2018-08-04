@@ -1,0 +1,12 @@
+mixin menu
+  +b.NAV.menu&attributes(attributes)
+    +e.__inner
+      +e.__item--current
+        +e.A.__link(href='') Обо Мне
+      +e.__item
+        +e.A.__link(href='') Проекты
+      +e.__item
+        +e.A.__link(href='') Блог
+      +e.__item
+        +e.A.__link(href='') Свяжитесь со мной
+

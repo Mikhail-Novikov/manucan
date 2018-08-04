@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <title>О нас — new/Frontend</title>
+    <!-- Meta-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <!-- Favicon-->
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/lib.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <!-- JS-->
+    <script>
+      // Load and insert svg-symbols.svg
+      (function()
+      {
+        'use strict';
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function()
+        {
+          if (xhr.status >= 200 && xhr.status < 400)
+          {
+            document.body.insertAdjacentHTML('afterbegin', xhr.responseText);
+          }
+        };
+        xhr.open('GET', 'img/svg-symbols.svg', true);
+        xhr.send();
+      })();
+    </script>
+  </head>
+  <body class="page__body">
+    <div class="page__body-inner">
+      <header class="header">
+        <div class="header__inner container-fluid mw-lg">
+          <button class="header__toggle">
+            <span class="header__toggle-icon"></span>
+            <span class="header__toggle-icon"></span>
+            <span class="header__toggle-icon"></span>
+          </button>
+          <div class="header__hidden">
+            <div class="header__logo">MANUCAN</div>
+            <nav class="menu header__menu">
+              <div class="menu__inner">
+                <div class="menu__item menu__item--current">
+                  <a class="menu__link" href="">Обо Мне</a>
+                </div>
+                <div class="menu__item">
+                  <a class="menu__link" href="">Проекты</a>
+                </div>
+                <div class="menu__item">
+                  <a class="menu__link" href="">Блог</a>
+                </div>
+                <div class="menu__item">
+                  <a class="menu__link" href="">Свяжитесь со мной</a>
+                </div>
+              </div>
+            </nav>
+            <div class="header__soc-net">
+              <div class="header__soc-net-inner">
+                <a class="header__soc-net-item header__soc-net-item--tweeter" href="#" target="_blank" title="tweeter">
+                  <svg class="icon-svg-tweeter" role="img">
+                    <use xlink:href="#icon-svg-tweeter"></use>
+                  </svg>
+                </a>
+                <a class="header__soc-net-item header__soc-net-item--inst" href="#" target="_blank" title="instagramm">
+                  <svg class="icon-svg-inst" role="img">
+                    <use xlink:href="#icon-svg-inst"></use>
+                  </svg>
+                </a>
+                <a class="header__soc-net-item header__soc-net-item--f" href="#" target="_blank" title="facebook">
+                  <svg class="icon-svg-f" role="img">
+                    <use xlink:href="#icon-svg-f"></use>
+                  </svg>
+                </a>
+                <a class="header__soc-net-item header__soc-net-item--mail" href="#" target="_blank" title="mail">
+                  <svg class="icon-svg-mail-logo" role="img">
+                    <use xlink:href="#icon-svg-mail-logo"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="section pb-20 pb-sm-70"></section>
+      <div class="container">
+        <h3 class="title mb-25">КАТЕГОРИИ</h3>
+      </div>
+      <div class="slider swiper-container container">
+        <div class="swiper-wrapper mb-30 mb-sm-0 pb-60">
+          <div class="swiper-slide">
+            <img src="img/contents/eqld1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/contents/eqld2.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/contents/eqld3.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/contents/eqld4.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/contents/eqld1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/contents/eqld2.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/contents/eqld3.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/contents/eqld4.png" alt="" />
+          </div>
+        </div>
+        <div class="swiper-button">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="slider swiper-container container">
+        <div class="swiper-wrapper mb-30 mb-sm-0 pb-60">
+          <div class="swiper-slide">
+            <img src="img/contents/eqld1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/contents/eqld2.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/contents/eqld3.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/contents/eqld4.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/contents/eqld1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/contents/eqld2.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/contents/eqld3.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/contents/eqld4.png" alt="" />
+          </div>
+        </div>
+        <div class="swiper-button">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="js/lib.js"></script>
+    <script src="js/app.js" async=""></script>
+  </body>
+</html>

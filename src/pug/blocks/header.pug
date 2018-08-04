@@ -1,0 +1,24 @@
+include menu 
+
+mixin header
+  +b.HEADER.header&attributes(attributes)
+    +e.__inner.container-fluid.mw-lg
+      +e.BUTTON.__toggle
+        +e.SPAN.__toggle-icon
+        +e.SPAN.__toggle-icon
+        +e.SPAN.__toggle-icon
+      +e.__hidden
+        +e.__logo MANUCAN
+
+        +menu.__menu
+
+        +e.__soc-net
+          +e.__soc-net-inner
+            +e.A.__soc-net-item--tweeter(href='#' target='_blank' title='tweeter')
+              +icon-svg('tweeter')
+            +e.A.__soc-net-item--inst(href='#' target='_blank' title='instagramm')
+              +icon-svg('inst')
+            +e.A.__soc-net-item--f(href='#' target='_blank' title='facebook')
+              +icon-svg('f')
+            +e.A.__soc-net-item--mail(href='#' target='_blank' title='mail')
+              +icon-svg('mail-logo') 

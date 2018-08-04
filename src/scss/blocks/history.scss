@@ -1,0 +1,62 @@
+.history {
+  --scale: 1;
+  transition: $transition-color;
+
+  &:hover {
+    box-shadow: 5px 5px 30px rgba(92, 49, 132, 0.4);
+  }
+
+  &__inner {
+    text-decoration: none;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    padding: calc-size(45) 0;
+    border: calc-size(10) solid;
+    border-image: url-img('history-border.png') 10 stretch;
+
+    .slick-slide:nth-child(3n + 2) &, [class*='col-']:nth-child(3n + 2) & {
+      border-image: url-img('history-border-1.png') 10 stretch;
+    }
+
+    .slick-slide:nth-child(3n + 3) &, [class*='col-']:nth-child(3n + 3) & {
+      border-image: url-img('history-border-2.png') 10 stretch;
+    }
+  }
+
+  &__date {
+    background: linear-gradient(25deg, #4e288b 0%, #a61a4d 100%) no-repeat 50% 100%/calc(100% - #{calc-size(20)}) calc-size(10) border-box;
+    overflow: hidden;
+    align-self: center;
+    max-width: 100%;
+    padding: 0 calc-size(10);
+    border-bottom: calc-size(28) solid transparent;
+    margin: calc-size(-32) 0 calc-size(15);
+  }
+
+  &__date-num {
+    color: #ccc0d0;
+    font-weight: 700;
+    font-size: calc-size(125);
+    line-height: calc-size(125);
+    letter-spacing: calc-size(-3);
+    white-space: nowrap;
+    position: relative;
+    top: calc-size(32);
+
+    small {
+      font-size: calc-size(60);
+      display: block;
+    }
+  }
+
+  &__arr {
+    color: #f9a801;
+    font-size: calc-size(19);
+    margin: 0 auto;
+  }
+
+  @include media-breakpoint-down(md) {
+    --scale: 265/365;
+  }
+}

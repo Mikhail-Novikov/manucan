@@ -1,0 +1,28 @@
+.section-intro-1 {
+  --scale: 1;
+  color: white;
+  font-size: calc-scale(16);
+  display: block;
+  padding: calc-scale(30) 0;
+  background: url-img('wn-intro-1-bg.jpg') no-repeat 50% 50%/cover;
+
+  &__logo {
+    display: block;
+    width: calc-scale(165);
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+  }
+
+  &--style-1 {
+    background-image: url-img('wn-intro-1-bg-1.jpg');
+  }
+
+  &--style-2 {
+    background-image: url-img('wn-intro-1-bg-2.jpg');
+  }
+
+  @include media-breakpoint-down(md) {
+    --scale: 134/165;
+  }
+}

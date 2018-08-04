@@ -1,0 +1,74 @@
+.section {
+  font-size: 16px;
+  padding: em(70) 0;
+
+  &__title {
+    color: #ec5a4f;
+    font-family: 'Montserrat';
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  &__ref--blue{
+    color: #1249b0;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 1px;
+    &:hover {
+      color: $color-next;
+    }
+
+  }
+  &__title-icon--next{
+    font-size: 11px;
+    width: 10px;
+  }
+  p, .p {
+    color: #000000;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  &__text{
+      &--gray{
+      color: #9b9b9b !important;
+      font-weight: 700 !important;
+      letter-spacing: 5px;
+    }
+  }
+
+  &--program {
+    background: url-img('sect-bg.jpg') no-repeat 50% 50%/cover;
+  }
+
+  &--news {
+    color: white;
+    background: url-img('sect-bg-1.jpg') no-repeat 50% 50%/cover;
+  }
+
+  &--history {
+    background: url-img('sect-bg-2.jpg') no-repeat 50% 50%/cover;
+  }
+
+  &--partners {
+    color: white;
+    background: url-img('sect-bg-1.jpg') no-repeat 50% 50%/cover;
+  }
+
+  &--gallery {
+    background: url-img('sect-bg-3.jpg') no-repeat 50% 50%/cover;
+  }
+
+  &--contacts {
+    color: white;
+    background: url-img('sect-bg-4.jpg') no-repeat 50% 50%/cover;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 16px*28/40;
+  }
+}

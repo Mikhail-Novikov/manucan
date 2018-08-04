@@ -1,0 +1,181 @@
+.section-intro {
+  display: flex;
+  background-color: #f5f5f5;
+  position: relative;
+  margin-bottom: 220px;
+
+  &::after {
+    content: '';
+    background: url-img('home/artoval.png') no-repeat 70% 100%/contain;
+    height: 75%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__fon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;   
+    &::after {
+      content: '';
+      width: 1px;
+      padding: percentage(60/350);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -280px;
+      display: block;
+      box-shadow: 0 80px 150px rgba(88, 90, 112, 0.7);
+      background-image: linear-gradient(183deg, #e86656 0%, #002ca6 100%);
+      border-radius: 50%;
+    } 
+
+    @include media-breakpoint-up(md) {
+      &::after {
+        padding: percentage(55/350);
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      &::after {
+        padding: percentage(45/350);
+      }
+    }
+
+    &::before {
+      content: '';
+      width: 1px;
+      padding: percentage(60/350);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -280px;
+      display: block;
+      box-shadow: 0 80px 150px rgba(88, 90, 112, 0.7);
+      background-image: linear-gradient(183deg, #e86656 0%, #002ca6 100%);
+      border-radius: 50%;
+    } 
+
+    @include media-breakpoint-up(md) {
+      &::before {
+        padding: percentage(55/350);
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      &::before {
+        padding: percentage(45/350);
+      }
+    }
+  }
+
+
+  &__inner {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 70px;
+    min-height: 470px;
+    z-index: 1;
+    position: relative;
+  }  
+
+  &__logo__h{
+    margin-top: 50px;
+  }
+
+
+  &__logo-h-top {
+    text-shadow: 0 -5px 50px rgba(24, 33, 49, 0.13);
+    color: #ec5a4f;
+    font-family: "Montserrat";
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: 1.33px;
+    padding-left: 10%;
+    display: inline-block;
+    text-transform: capitalize;
+  }
+
+  &__logo-h-bottom {
+    text-shadow: 0 -5px 50px rgba(24, 33, 49, 0.13);
+    color: #ec5a4f;
+    font-family: "Montserrat";
+    font-size: 45px;
+    line-height: 1;
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: 3.75px;
+    text-transform: uppercase;
+    margin-top: 0;    
+  }
+
+  .link-block{
+    position: absolute;
+    bottom: -220px;
+    left: 0;   
+    right: 0;
+    max-width: 100% !important;
+    transition: bottom 0.6s;
+  }
+
+  @include media-breakpoint-up(sm) {
+    &__logo-h-top{
+      font-size: 28px;
+    }
+    &__logo-h-bottom{
+      font-size: 78px;
+    }
+    &__logo__h{
+      margin-top: 0;
+    }
+  } 
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 120px;
+    &__inner {
+      justify-content: center;
+      padding-top: 70px;
+      height: 100vh;
+    }
+    &__logo__h{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &__logo-h-top{
+      font-size: 48px;
+    }
+    &__logo-h-bottom{
+      font-size: 150px;
+    }    
+
+    .link-block{
+      position: absolute;
+      bottom: 30px;
+      left: 0; 
+      right: auto; 
+      padding: 30px 65px 15px 65px;
+    }
+    &::after {
+      height: 100%;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+.document--scroll{
+  .section-intro {
+    .section-intro__inner{
+      position: relative;
+      .link-block{
+        position: absolute;
+        bottom: -55px;
+        left: 0;
+      }
+}}}}

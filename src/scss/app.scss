@@ -1,0 +1,51 @@
+@import "lib/functions";
+@import "lib/variables";
+@import "lib/mixins";
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/main";
+@import "blocks/footer";
+@import "blocks/section-intro";
+@import "blocks/section";
+@import "blocks/program";
+@import "blocks/new";
+@import "blocks/carousel";
+@import "blocks/swiper";
+@import "blocks/history";
+@import "blocks/partners";
+@import "blocks/partner";
+@import "blocks/btn-border";
+@import "blocks/contacts";
+@import "blocks/section-intro-1";
+@import "blocks/section-main";
+@import "blocks/breadcrumb";
+@import "blocks/btn-border-grad";
+@import "blocks/partner-1";
+@import "blocks/gallery";
+@import "blocks/contacts-1";
+@import "blocks/map";
+@import "blocks/content";
+@import "blocks/datetime";
+@import "blocks/carousel-1";
+@import "blocks/pagination";
+@import "blocks/section-1";
+@import "blocks/nav-section";
+@import "blocks/participant";
+@import "blocks/error";
+@import "blocks/popup";
+@import "blocks/partner-view";
+@import "blocks/participant-view";
+@import "blocks/form-partner";
+@import "blocks/field";
+@import "blocks/btn-grad";
+
+@import "blocks/section-about";
+@import "blocks/link-block";
+
+

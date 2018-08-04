@@ -1,0 +1,29 @@
+.field {
+  --scale: 1;
+  color: $color-base;
+  font-size: calc-size(16);
+  line-height: calc-size(24);
+  display: inline-block;
+  vertical-align: top;
+  padding: calc-size(13) calc-size(20);
+  border: 1px solid #ccc0d0;
+  background: transparent;
+  transition: $transition-color;
+
+  &::placeholder {
+    color: $color-base;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: $color-base;
+  }
+
+  &:disabled {
+    opacity: 0.7;
+  }
+
+  @include media-breakpoint-down(sm) {
+    --scale: 14/16;
+  }
+}

@@ -1,0 +1,8 @@
+mixin breadcrumb(data)
+  +b.NAV.breadcrumb&attributes(attributes)
+    +e.__item: +e.A.__link(href=pagesList.index.url)= pagesList.index.title
+    each item, i in data
+      if i !== data.length - 1
+        +e.__item: +e.A.__link(href=item.url)= item.title
+      else
+        +e.__item= item.title

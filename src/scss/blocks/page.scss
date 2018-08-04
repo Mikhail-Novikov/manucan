@@ -1,0 +1,45 @@
+.page {
+  color: $color-base;
+  font-weight: $font-weight-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-family: $font-family-base;
+  background: $color-base-bg;
+
+  &__body-inner {
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+  }
+
+  &__header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: $zindex-fixed;
+  }
+
+  &__main {
+    margin-top: 50px;
+  }
+
+  &__footer {
+    margin-top: auto;
+  }
+
+  @include media-breakpoint-down(md) {
+    &__body {
+      &--header-open {
+        overflow: hidden;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__main {
+      margin-top: 70px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.section-1 {
+  --scale: 1;
+  color: $color-base;
+  font-size: calc-size(16);
+  line-height: 1.5;
+  text-align: left;
+  display: block;
+  padding: calc-scale(70) 0;
+
+  &__header {
+    margin-bottom: calc-scale(35);
+  }
+
+  &__title {
+    font-size: calc-size(28);
+    line-height: 1.25;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 calc-size(20);
+  }
+
+  @include media-breakpoint-down(sm) {
+    --scale: 2/3;
+
+    &__title {
+      --scale: 24/28;
+    }
+  }
+}

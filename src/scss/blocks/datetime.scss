@@ -1,0 +1,10 @@
+.datetime {
+  --scale: 1;
+  color: #ccc0d0;
+  font-size: calc-size(14);
+  line-height: 1.25;
+
+  @include media-breakpoint-down(sm) {
+    --scale: 12/14;
+  }
+}

@@ -1,0 +1,21 @@
+.partner {
+  font-size: 16px;
+  box-shadow: 0 5px 50px rgba(22, 27, 110, 0.6);
+  background-color: #f9f9fc;
+  cursor: pointer;
+
+  &__inner {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: percentage(20/265);
+    height: 100%;
+  }
+
+  &__img {
+    min-width: 0.1Px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

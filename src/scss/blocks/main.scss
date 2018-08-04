@@ -1,0 +1,11 @@
+.main {
+  &__intro {
+    margin-top: -50px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__intro {
+      margin-top: -70px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+include lib/variables
+include lib/mixins
+include blocks/page
+
++page(pagesList.uiKit.title)
+  +b.MAIN(style="padding: 15px;")
+    h1 #{pagesList.uiKit.title} - #{pkg.description}
+
+    h2 Colors
+    table(style="border-collapse: collapse; width: 100%; max-width: 1000px;")
+      each color in ['#fcfcfc', '#f9f9fc', '#ccc0d0', '#f9a801', '#cb57ac', '#2ec1ff', '#5c3184', '#161b6e', 'linear-gradient(136deg, #432091 0%, #c3396a 100%)']
+        tr
+          td(style="padding: 5px; border: 1px solid #ccc;"): div(style=`width: 30px; height: 30px; border-radius: 50%; border: 1px solid #ccc; background: ${color};`)
+          td(style="padding: 5px; border: 1px solid #ccc;"): code= color
+
+    h2 Fonts
+    table(style="border-collapse: collapse; width: 100%; max-width: 1000px;")
+      each font in ['Smarty Cond:400:normal', 'PT Sans:400:normal', 'PT Sans:400:italic', 'PT Sans:700:normal', 'PT Sans:700:italic']
+        - font = font.split(':');
+        tr
+          td(style="padding: 5px; border: 1px solid #ccc;"): div(style=`font-family: ${font[0]}; font-weight: ${font[1]}; font-style: ${font[2]};`)= font[0]
+          td(style="padding: 5px; border: 1px solid #ccc;"): code= font[1]
+          td(style="padding: 5px; border: 1px solid #ccc;"): code= font[2]

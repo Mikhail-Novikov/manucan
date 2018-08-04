@@ -1,0 +1,21 @@
+.form-partner {
+  --scale: 1;
+  color: $color-base;
+  font-size: calc-size(13);
+  line-height: (16/13);
+
+  &__row {
+    max-width: 365px;
+    margin: 0 auto;
+  }
+
+  &__info {
+    color: #ccc0d0;
+    text-align: center;
+    margin-top: calc-size(50);
+  }
+
+  @include media-breakpoint-down(sm) {
+    --scale: 11/13;
+  }
+}

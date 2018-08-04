@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <title>UI kit — new/Frontend</title>
+    <!-- Meta-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <!-- Favicon-->
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/lib.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <!-- JS-->
+    <script>
+      // Load and insert svg-symbols.svg
+      (function()
+      {
+        'use strict';
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function()
+        {
+          if (xhr.status >= 200 && xhr.status < 400)
+          {
+            document.body.insertAdjacentHTML('afterbegin', xhr.responseText);
+          }
+        };
+        xhr.open('GET', 'img/svg-symbols.svg', true);
+        xhr.send();
+      })();
+    </script>
+  </head>
+  <body class="page__body">
+    <div class="page__body-inner">
+      <main style="padding: 15px;" role="main">
+        <h1>UI kit — new/Frontend</h1>
+        <h2>Colors</h2>
+        <table style="border-collapse: collapse; width: 100%; max-width: 1000px;">
+          <tr>
+            <td style="padding: 5px; border: 1px solid #ccc;">
+              <div style="width: 30px; height: 30px; border-radius: 50%; border: 1px solid #ccc; background: #fcfcfc;"></div>
+            </td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>#fcfcfc</code></td>
+          </tr>
+          <tr>
+            <td style="padding: 5px; border: 1px solid #ccc;">
+              <div style="width: 30px; height: 30px; border-radius: 50%; border: 1px solid #ccc; background: #f9f9fc;"></div>
+            </td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>#f9f9fc</code></td>
+          </tr>
+          <tr>
+            <td style="padding: 5px; border: 1px solid #ccc;">
+              <div style="width: 30px; height: 30px; border-radius: 50%; border: 1px solid #ccc; background: #ccc0d0;"></div>
+            </td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>#ccc0d0</code></td>
+          </tr>
+          <tr>
+            <td style="padding: 5px; border: 1px solid #ccc;">
+              <div style="width: 30px; height: 30px; border-radius: 50%; border: 1px solid #ccc; background: #f9a801;"></div>
+            </td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>#f9a801</code></td>
+          </tr>
+          <tr>
+            <td style="padding: 5px; border: 1px solid #ccc;">
+              <div style="width: 30px; height: 30px; border-radius: 50%; border: 1px solid #ccc; background: #cb57ac;"></div>
+            </td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>#cb57ac</code></td>
+          </tr>
+          <tr>
+            <td style="padding: 5px; border: 1px solid #ccc;">
+              <div style="width: 30px; height: 30px; border-radius: 50%; border: 1px solid #ccc; background: #2ec1ff;"></div>
+            </td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>#2ec1ff</code></td>
+          </tr>
+          <tr>
+            <td style="padding: 5px; border: 1px solid #ccc;">
+              <div style="width: 30px; height: 30px; border-radius: 50%; border: 1px solid #ccc; background: #5c3184;"></div>
+            </td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>#5c3184</code></td>
+          </tr>
+          <tr>
+            <td style="padding: 5px; border: 1px solid #ccc;">
+              <div style="width: 30px; height: 30px; border-radius: 50%; border: 1px solid #ccc; background: #161b6e;"></div>
+            </td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>#161b6e</code></td>
+          </tr>
+          <tr>
+            <td style="padding: 5px; border: 1px solid #ccc;">
+              <div style="width: 30px; height: 30px; border-radius: 50%; border: 1px solid #ccc; background: linear-gradient(136deg, #432091 0%, #c3396a 100%);"></div>
+            </td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>linear-gradient(136deg, #432091 0%, #c3396a 100%)</code></td>
+          </tr>
+        </table>
+        <h2>Fonts</h2>
+        <table style="border-collapse: collapse; width: 100%; max-width: 1000px;">
+          <tr>
+            <td style="padding: 5px; border: 1px solid #ccc;">
+              <div style="font-family: Smarty Cond; font-weight: 400; font-style: normal;">Smarty Cond</div>
+            </td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>400</code></td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>normal</code></td>
+          </tr>
+          <tr>
+            <td style="padding: 5px; border: 1px solid #ccc;">
+              <div style="font-family: PT Sans; font-weight: 400; font-style: normal;">PT Sans</div>
+            </td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>400</code></td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>normal</code></td>
+          </tr>
+          <tr>
+            <td style="padding: 5px; border: 1px solid #ccc;">
+              <div style="font-family: PT Sans; font-weight: 400; font-style: italic;">PT Sans</div>
+            </td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>400</code></td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>italic</code></td>
+          </tr>
+          <tr>
+            <td style="padding: 5px; border: 1px solid #ccc;">
+              <div style="font-family: PT Sans; font-weight: 700; font-style: normal;">PT Sans</div>
+            </td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>700</code></td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>normal</code></td>
+          </tr>
+          <tr>
+            <td style="padding: 5px; border: 1px solid #ccc;">
+              <div style="font-family: PT Sans; font-weight: 700; font-style: italic;">PT Sans</div>
+            </td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>700</code></td>
+            <td style="padding: 5px; border: 1px solid #ccc;"><code>italic</code></td>
+          </tr>
+        </table>
+      </main>
+    </div>
+    <!-- JS -->
+    <script src="js/lib.js"></script>
+    <script src="js/app.js" async=""></script>
+  </body>
+</html>

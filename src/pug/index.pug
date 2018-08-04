@@ -1,0 +1,60 @@
+include lib/variables
+include lib/mixins
+include blocks/page
+
+include blocks/header
+include blocks/footer
+
+
++page(pagesList.index.title)
+	+header
+	+b.main.__main
+
+		+b.SECTION.section-intro.__intro
+			+b.__fon
+
+			+e.__inner.container
+
+				+e.logo__h
+					+e.STRONG.logo-h-top.m-0 Армен
+					+e.H1.logo-h-bottom Манукян
+				//- +e.IMG.__img(src='img/contents/armen.png' alt='Армен Манукян')
+
+				+b.A(href="#").link-block
+					+e.H3.title Проекты
+					+e.P.text Соглашение о сотрудничестве с крупнейшим в Китае маркетплейсом
+						+e.SPAN.arr
+							+icon-svg('link-arrow')
+
+
+
+
+
+		+b.SECTION.section--about
+			.container
+				+e.H2.__title.d-inline-block.mb-50 Обо мне
+				+e.SPAN.ref
+					+e.A(href="#").__ref--blue.ml-50.d-inline-block Подробнее
+						+icon-svg('angle-right').align-middle.__title-icon--next
+				+e.P.__text--gray.mb-30 Место работы
+				.row.mb-45
+					.col-sm-8
+						.mb-45
+							P.mb-20  Куратор рабочей группы Экспертного совета по цифровой экономике и блокчейн технологиям при Государственной Думе РФ.
+							P.mb-20  Руководитель проекта по развитию цифровых услуг в Российском экспортном центре.
+						+b.separator
+							+e.__sep--h
+														
+					.col-sm-4
+						+b.oval-img
+							+e.IMG.__fhoto(src="img/contents/Armen-Manukyan-1.png", alt="Армен Манукян" title='Армен Манукян')
+							+e.__overlay
+
+				+e.P.__text--gray.mb-30 Образование
+				+b.UL.list.row
+					+e.LI.__oval.p.col-xss-6 Blockchain Academy, 2017
+					+e.LI.__oval.p.col-xss-6 Wordshop, 2013
+					+e.LI.__oval.p.col-xss-6 RMA - Менеджмент в сфере интернет-бизнеса, 2016
+					+e.LI.__oval.p.col-xss-6 Российский экономический университет имени Г. В. Плеханова, 2011	
+
+	+footer 

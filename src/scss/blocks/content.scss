@@ -1,0 +1,51 @@
+.content {
+  --scale: 1;
+  color: $color-base;
+  font-size: calc-size(16);
+  line-height: (24/16);
+  text-align: left;
+  display: block;
+
+  p {
+    margin: 0 0 em(24);
+  }
+
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 1em;
+  }
+
+  h1, .h1 {
+    font-size: calc-size(36);
+  }
+
+  h2, .h2 {
+    font-size: calc-size(30);
+  }
+
+  h3, .h3 {
+    font-size: calc-size(24);
+  }
+
+  h4, .h4 {
+    font-size: calc-size(18);
+  }
+
+  h5, .h5 {
+    font-size: calc-size(16);
+  }
+
+  h6, .h6 {
+    font-size: calc-size(14);
+  }
+
+  @include media-breakpoint-down(sm) {
+    --scale: 14/16;
+  }
+}

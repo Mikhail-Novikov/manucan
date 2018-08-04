@@ -1,0 +1,47 @@
+.btn-grad {
+  --scale: 1;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: calc-size(16);
+  line-height: calc-size(20);
+  font-weight: 700;
+  letter-spacing: calc-size(0.72);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  padding: calc-size(16) calc-size(20);
+  border: 0;
+  background: #2ec1ff;
+  border-radius: calc-size(26);
+  position: relative;
+  z-index: 1;
+  transition: $transition-color;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(39deg, #4e288b 0%, #a61a4d 100%) no-repeat;
+    transition: opacity $transition-all;
+    z-index: -1;
+  }
+
+  @include not-disabled {
+    &:hover {
+      &::before {
+        opacity: 0;
+      }
+    }
+  }
+
+  &:disabled {
+    opacity: 0.7;
+  }
+}

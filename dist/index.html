@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <title>Главная — new/Frontend</title>
+    <!-- Meta-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <!-- Favicon-->
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/lib.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <!-- JS-->
+    <script>
+      // Load and insert svg-symbols.svg
+      (function()
+      {
+        'use strict';
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function()
+        {
+          if (xhr.status >= 200 && xhr.status < 400)
+          {
+            document.body.insertAdjacentHTML('afterbegin', xhr.responseText);
+          }
+        };
+        xhr.open('GET', 'img/svg-symbols.svg', true);
+        xhr.send();
+      })();
+    </script>
+  </head>
+  <body class="page__body">
+    <div class="page__body-inner">
+      <header class="header">
+        <div class="header__inner container-fluid mw-lg">
+          <button class="header__toggle">
+            <span class="header__toggle-icon"></span>
+            <span class="header__toggle-icon"></span>
+            <span class="header__toggle-icon"></span>
+          </button>
+          <div class="header__hidden">
+            <div class="header__logo">MANUCAN</div>
+            <nav class="menu header__menu">
+              <div class="menu__inner">
+                <div class="menu__item menu__item--current">
+                  <a class="menu__link" href="">Обо Мне</a>
+                </div>
+                <div class="menu__item">
+                  <a class="menu__link" href="">Проекты</a>
+                </div>
+                <div class="menu__item">
+                  <a class="menu__link" href="">Блог</a>
+                </div>
+                <div class="menu__item">
+                  <a class="menu__link" href="">Свяжитесь со мной</a>
+                </div>
+              </div>
+            </nav>
+            <div class="header__soc-net">
+              <div class="header__soc-net-inner">
+                <a class="header__soc-net-item header__soc-net-item--tweeter" href="#" target="_blank" title="tweeter">
+                  <svg class="icon-svg-tweeter" role="img">
+                    <use xlink:href="#icon-svg-tweeter"></use>
+                  </svg>
+                </a>
+                <a class="header__soc-net-item header__soc-net-item--inst" href="#" target="_blank" title="instagramm">
+                  <svg class="icon-svg-inst" role="img">
+                    <use xlink:href="#icon-svg-inst"></use>
+                  </svg>
+                </a>
+                <a class="header__soc-net-item header__soc-net-item--f" href="#" target="_blank" title="facebook">
+                  <svg class="icon-svg-f" role="img">
+                    <use xlink:href="#icon-svg-f"></use>
+                  </svg>
+                </a>
+                <a class="header__soc-net-item header__soc-net-item--mail" href="#" target="_blank" title="mail">
+                  <svg class="icon-svg-mail-logo" role="img">
+                    <use xlink:href="#icon-svg-mail-logo"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main page__main">
+        <section class="section-intro main__intro">
+          <div class="section-intro__fon"></div>
+          <div class="section-intro__inner container">
+            <div class="section-intro__logo__h">
+              <strong class="section-intro__logo-h-top m-0">Армен</strong>
+              <h1 class="section-intro__logo-h-bottom">Манукян</h1>
+            </div>
+            <a class="link-block" href="#">
+              <h3 class="link-block__title">Проекты</h3>
+              <p class="link-block__text">Соглашение о сотрудничестве с крупнейшим в Китае маркетплейсом
+                <span class="link-block__arr">
+                  <svg class="icon-svg-link-arrow" role="img">
+                    <use xlink:href="#icon-svg-link-arrow"></use>
+                  </svg>
+                </span>
+              </p>
+            </a>
+          </div>
+        </section>
+        <section class="section section--about">
+          <div class="container">
+            <h2 class="section__title d-inline-block mb-50">Обо мне</h2>
+            <span class="section__ref">
+              <a class="section__ref section__ref--blue ml-50 d-inline-block" href="#">Подробнее
+                <svg class="icon-svg-angle-right align-middle section__title-icon section__title-icon--next" role="img">
+                  <use xlink:href="#icon-svg-angle-right"></use>
+                </svg>
+              </a>
+            </span>
+            <p class="section__text section__text--gray mb-30">Место работы</p>
+            <div class="row mb-45">
+              <div class="col-sm-8">
+                <div class="mb-45">
+                  <P class="mb-20"> Куратор рабочей группы Экспертного совета по цифровой экономике и блокчейн технологиям при Государственной Думе РФ.</P>
+                  <P class="mb-20"> Руководитель проекта по развитию цифровых услуг в Российском экспортном центре.</P>
+                </div>
+                <div class="separator">
+                  <div class="separator__sep separator__sep--h"></div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="oval-img">
+                  <img class="oval-img__fhoto" src="img/contents/Armen-Manukyan-1.png" alt="Армен Манукян" title="Армен Манукян" />
+                  <div class="oval-img__overlay"></div>
+                </div>
+              </div>
+            </div>
+            <p class="section__text section__text--gray mb-30">Образование</p>
+            <ul class="list row">
+              <li class="list__oval p col-xss-6">Blockchain Academy, 2017</li>
+              <li class="list__oval p col-xss-6">Wordshop, 2013</li>
+              <li class="list__oval p col-xss-6">RMA — Менеджмент в сфере интернет-бизнеса, 2016</li>
+              <li class="list__oval p col-xss-6">Российский экономический университет имени Г. В. Плеханова, 2011 </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="footer__inner-top container-fluid mw-lg">
+          <div class="row">
+            <div class="col-2 d-flex flex-column flex-lg-row align-items-lg-center justify-content-between">
+              <div class="footer__logo">MANUCAN</div>
+            </div>
+            <div class="col-8 d-lg-flex align-items-lg-center justify-content-end">
+              <nav class="footer__menu">
+                <div class="footer__menu-inner">
+                  <a class="footer__menu-item" href="">Обо мне</a>
+                  <a class="footer__menu-item" href="">Проекты</a>
+                  <a class="footer__menu-item" href="">Блог</a>
+                  <a class="footer__menu-item" href="">В СМИ</a>
+                  <a class="footer__menu-item" href="">Фото</a>
+                  <a class="footer__menu-item" href="">Мероприятия</a>
+                  <a class="footer__menu-item" href="">Контакты</a>
+                </div>
+              </nav>
+            </div>
+            <div class="col-2 d-flex flex-column flex-lg-row align-items-lg-center justify-content-end">
+              <div class="footer__soc-net">
+                <div class="footer__soc-net-inner">
+                  <a class="footer__soc-net-item footer__soc-net-item--vk" href="" target="_blank" title="VK">
+                    <svg class="icon-svg-vk" role="img">
+                      <use xlink:href="#icon-svg-vk"></use>
+                    </svg>
+                  </a>
+                  <a class="footer__soc-net-item footer__soc-net-item--fb" href="" target="_blank" title="Facebook">
+                    <svg class="icon-svg-fb" role="img">
+                      <use xlink:href="#icon-svg-fb"></use>
+                    </svg>
+                  </a>
+                  <a class="footer__soc-net-item footer__soc-net-item--tw" href="" target="_blank" title="Twitter">
+                    <svg class="icon-svg-tw" role="img">
+                      <use xlink:href="#icon-svg-tw"></use>
+                    </svg>
+                  </a>
+                  <a class="footer__soc-net-item footer__soc-net-item--tw" href="" target="_blank" title="Twitter">
+                    <svg class="icon-svg-tw" role="img">
+                      <use xlink:href="#icon-svg-tw"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__inner-bottom container-fluid mw-lg">
+          <div class="footer__copyright">©2018 Все права защищены</div>
+          <div class="footer__dev">Разработка сайта
+            <a class="footer__dev-link" href="" target="_blank">
+              <svg class="icon-svg-empire-logo-blue footer__dev-logo" role="img">
+                <use xlink:href="#icon-svg-empire-logo-blue"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- JS -->
+    <script src="js/lib.js"></script>
+    <script src="js/app.js" async=""></script>
+  </body>
+</html>
