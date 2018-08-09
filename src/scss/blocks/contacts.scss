@@ -1,78 +1,43 @@
-.contacts {
+.form-contacts {
   color: $color-base;
   font-size: 16px;
-
-  &__row {
-    background-color: #f9f9fc;
-    min-height: 400px;
+  &__info{
+    opacity: 0.4;
+    font-size: 10px;
+    line-height: 1.3;
   }
-
-  &__map {
-    box-shadow: 0 5px 30px rgba(22, 27, 110, 0.5);
-  }
-
-  &__content {
-    font-size: em(14);
-    line-height: (20/14);
-
-    p {
-      margin-bottom: 1em;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
-    hr {
-      height: em(3, 14);
-      border: 0;
-      margin: 1.5em 0;
-      position: relative;
-
-      &::before {
-        content: '';
-        width: em(57, 14);
-        background: #f9a801;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-      }
+  &__contacts_btn input{
+    cursor: pointer;
+    width: 100%;
+    @include media-breakpoint-up(sm) {
+      width: auto;
     }
   }
+}
+.societ{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.46875rem;
+    &__item {
+    color: $color-base;
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px 0 5px;
+    transition: $transition-color;
 
-  &__title {
-    font-size: em(16, 14);
-    line-height: (20/16);
-    margin: 0 0 1em;
-  }
-
-  &__tel {
-    font-size: em(18, 14);
-  }
-
-  @include media-breakpoint-down(md) {
-    font-size: 16px*12/14;
-  }
-
-  @include media-breakpoint-down(sm) {
-    &__map {
-      height: 300px;
+    &:hover {
+      color: $color-link;
     }
 
-    &__content {
-      text-align: center;
-
-      hr {
-        margin-left: auto;
-        margin-right: auto;
-      }
+    &--fb {
+      
     }
+    &--tweeter{
+      font-size: 31px;
+    }
+
   }
 }

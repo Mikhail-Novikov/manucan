@@ -82,6 +82,9 @@
     min-height: 470px;
     z-index: 1;
     position: relative;
+    .link-block__arr{
+      right: 65px;
+    }
   }  
 
   &__logo__h{
@@ -122,6 +125,9 @@
     right: 0;
     max-width: 100% !important;
     transition: bottom 0.6s;
+    &:hover{
+      bottom: -210px;     
+    }
   }
 
   @include media-breakpoint-up(sm) {
@@ -159,8 +165,10 @@
       position: absolute;
       bottom: 30px;
       left: 0; 
-      right: auto; 
-      padding: 30px 65px 15px 65px;
+      right: auto;
+      &:hover{
+        bottom: 40px;     
+      } 
     }
     &::after {
       height: 100%;
@@ -177,5 +185,8 @@
         position: absolute;
         bottom: -55px;
         left: 0;
+        &:hover{
+          bottom: -45px;     
+        } 
       }
 }}}}

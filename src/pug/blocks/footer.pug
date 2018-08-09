@@ -2,12 +2,12 @@ mixin footer
   +b.FOOTER.footer&attributes(attributes)
     +e.__inner-top.container-fluid.mw-lg
       .row
-        .col-2.d-flex.flex-column.flex-lg-row.align-items-lg-center.justify-content-between
-          +e.__logo MANUCAN
+        .col-lg-2.d-flex.flex-column.flex-lg-row.align-items-center.justify-content-between
+          +e.__logo.mb-20.mb-lg-0 MANUCAN
 
-        .col-8.d-lg-flex.align-items-lg-center.justify-content-end
+        .col-lg-8.col-md-9.d-flex.align-items-center.justify-content-lg-center.justify-content-md-start.justify-content-center
           +e.NAV.__menu
-            +e.__menu-inner
+            +e.__menu-inner.flex-xss-row
               +e.A.__menu-item(href='') Обо мне
               +e.A.__menu-item(href='') Проекты
               +e.A.__menu-item(href='') Блог
@@ -15,17 +15,17 @@ mixin footer
               +e.A.__menu-item(href='') Фото
               +e.A.__menu-item(href='') Мероприятия
               +e.A.__menu-item(href='') Контакты
-        .col-2.d-flex.flex-column.flex-lg-row.align-items-lg-center.justify-content-end
+        .col-lg-2.col-md-3.d-flex.flex-column.flex-lg-row.align-items-lg-center.justify-content-end
           +e.__soc-net
             +e.__soc-net-inner
-              +e.A.__soc-net-item--vk(href='' target='_blank' title='VK')
-                +icon-svg('vk')
-              +e.A.__soc-net-item--fb(href='' target='_blank' title='Facebook')
-                +icon-svg('fb')
-              +e.A.__soc-net-item--tw(href='' target='_blank' title='Twitter')
-                +icon-svg('tw')
-              +e.A.__soc-net-item--tw(href='' target='_blank' title='Twitter')
-                +icon-svg('tw')
+              +e.A.__soc-net-item--tw(href='' target='_blank' title='tweeter')
+                +icon-svg('tweeter')
+              +e.A.__soc-net-item--inst(href='' target='_blank' title='instagramm')
+                +icon-svg('inst')
+              +e.A.__soc-net-item--f(href='' target='_blank' title='facebook')
+                +icon-svg('f')
+              +e.A.__soc-net-item--mail(href='' target='_blank' title='mail')
+                +icon-svg('mail-logo')
 
     +e.__inner-bottom.container-fluid.mw-lg
       +e.__copyright ©2018 Все права защищены

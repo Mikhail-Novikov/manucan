@@ -1,7 +1,7 @@
 include menu 
 
-mixin header
-  +b.HEADER.header&attributes(attributes)
+mixin header(fon)
+  +b.HEADER.header(class=fon)
     +e.__inner.container-fluid.mw-lg
       +e.BUTTON.__toggle
         +e.SPAN.__toggle-icon

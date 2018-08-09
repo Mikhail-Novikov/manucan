@@ -1,29 +1,62 @@
+textarea.field{
+  padding: calc-size(12) calc-size(18);
+  height: 180px;
+  &::-webkit-input-placeholder {
+    color: $color-base;
+
+  }
+
+}
 .field {
   --scale: 1;
   color: $color-base;
-  font-size: calc-size(16);
+  font-size: calc-size(14);
   line-height: calc-size(24);
-  display: inline-block;
+  margin-bottom: 15px;
+  display: block;
   vertical-align: top;
-  padding: calc-size(13) calc-size(20);
-  border: 1px solid #ccc0d0;
+  padding: calc-size(12) calc-size(45);
+  border-radius: 5px;
+  border: 1px solid #dedede;
+  background-color: #f5f5f5;  
   background: transparent;
-  transition: $transition-color;
+  transition: 0.3s;
+
 
   &::placeholder {
     color: $color-base;
+
+  }
+
+
+
+  @include media-breakpoint-down(sm) {
+    --scale: 14/16;
+  }
+
+  &[name='email']{
+    background: url(../img/field-icon-email.svg) no-repeat 18px center ;
+  }
+
+  &[name='nic']{
+    background: url(../img/field-icon-nic.svg) no-repeat 18px center ;
   }
 
   &:focus {
     outline: 0;
-    border-color: $color-base;
+    border-color: $color-link;
+    padding: calc-size(12) calc-size(18);
+    background-position: 4px 4px;
+    background-size: 8px;
+  }
+
+  &:focus::placeholder {
+    opacity: 0.3;
   }
 
   &:disabled {
     opacity: 0.7;
   }
 
-  @include media-breakpoint-down(sm) {
-    --scale: 14/16;
-  }
+
 }

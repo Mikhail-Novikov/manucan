@@ -7,7 +7,7 @@ include blocks/footer
 
 
 +page(pagesList.index.title)
-	+header
+	+header('header--gray')
 	+b.main.__main
 
 		+b.SECTION.section-intro.__intro
@@ -27,26 +27,24 @@ include blocks/footer
 							+icon-svg('link-arrow')
 
 
+		+b.SECTION.section--about#about
+			.container.pl-30.pr-30.pl-sm-15.pr-sm-15
+				+e.H2.__title--red Обо мне
 
-
-
-		+b.SECTION.section--about
-			.container
-				+e.H2.__title.d-inline-block.mb-50 Обо мне
-				+e.SPAN.ref
-					+e.A(href="#").__ref--blue.ml-50.d-inline-block Подробнее
-						+icon-svg('angle-right').align-middle.__title-icon--next
-				+e.P.__text--gray.mb-30 Место работы
-				.row.mb-45
+				+e.A(href="#").__ref--blue.ml-5.ml-sm-50 Подробнее
+					+icon-svg('angle-right').align-middle.__title-icon--next
+				
+				.row.mb-15.mb-sm-45
 					.col-sm-8
-						.mb-45
-							P.mb-20  Куратор рабочей группы Экспертного совета по цифровой экономике и блокчейн технологиям при Государственной Думе РФ.
-							P.mb-20  Руководитель проекта по развитию цифровых услуг в Российском экспортном центре.
-						+b.separator
+						+e.P.__text--gray.mb-30.mt-30.mt-sm-0 Место работы
+						.mb-0.mb-sm-45
+							P.mb-15  Куратор рабочей группы Экспертного совета по цифровой экономике и блокчейн технологиям при Государственной Думе РФ.
+							P.mb-15  Руководитель проекта по развитию цифровых услуг в Российском экспортном центре.
+						+b.separator.d-none.d-sm-block
 							+e.__sep--h
 														
-					.col-sm-4
-						+b.oval-img
+					.col-sm-4.d-none.d-sm-block
+						+b.oval-img.mt-40
 							+e.IMG.__fhoto(src="img/contents/Armen-Manukyan-1.png", alt="Армен Манукян" title='Армен Манукян')
 							+e.__overlay
 
@@ -56,5 +54,221 @@ include blocks/footer
 					+e.LI.__oval.p.col-xss-6 Wordshop, 2013
 					+e.LI.__oval.p.col-xss-6 RMA - Менеджмент в сфере интернет-бизнеса, 2016
 					+e.LI.__oval.p.col-xss-6 Российский экономический университет имени Г. В. Плеханова, 2011	
+
+
+		+b.SECTION.section--smi
+			.container
+				+e.H2.__title--red В СМИ
+				+e.ref
+					+e.A(href="#").__ref--blue.ml-5.ml-sm-50 Больше материалов
+						+icon-svg('angle-right').align-middle.__title-icon--next
+
+			
+			
+			+b.DIV.slider.slider-three.swiper-container
+				.swiper-wrapper.mb-30.mb-sm-0.pb-40.pb-sm-90
+					.swiper-slide.animate-top-offset
+						+b.A(href="#").link-block.d-block.pt-40.pt-sm-50
+							+e.H3.title.mb-25.mb-sm-40 shiptor.ru
+							+e.P.text «Наша работа — помогать российским компаниям выходить на международный рынок интернет-торговли»
+								+e.SPAN.arr.d-block
+									+icon-svg('link-arrow')
+					.swiper-slide.animate-top-offset
+						+b.A(href="#").link-block.d-block.pt-40.pt-sm-50
+							+e.H3.title.mb-25.mb-sm-40 vc.ru
+							+e.P.text Как прошла конференция «Экспорт»
+								+e.SPAN.arr.d-block
+									+icon-svg('link-arrow')
+					.swiper-slide.animate-top-offset
+						+b.A(href="#").link-block.d-block.pt-40.pt-sm-50
+							+e.H3.title.mb-25.mb-sm-40 meyou.ru
+							+e.P.text «Всегда есть люди, которые готовы заниматься экспортом. Профессионалов много, ваша задача их найти»
+								+e.SPAN.arr.d-block
+									+icon-svg('link-arrow')
+					.swiper-slide.animate-top-offset
+						+b.A(href="#").link-block.d-block.pt-40.pt-sm-50
+							+e.H3.title.mb-25.mb-sm-40 shiptor.ru
+							+e.P.text «Наша работа — помогать российским компаниям выходить на международный рынок интернет-торговли»
+								+e.SPAN.arr.d-block
+									+icon-svg('link-arrow')
+					.swiper-slide.animate-top-offset
+						+b.A(href="#").link-block.d-block.pt-40.pt-sm-50
+							+e.H3.title.mb-25.mb-sm-40 vc.ru
+							+e.P.text Как прошла конференция «Экспорт»
+								+e.SPAN.arr.d-block
+									+icon-svg('link-arrow')
+					.swiper-slide.animate-top-offset
+						+b.A(href="#").link-block.d-block.pt-40.pt-sm-50
+							+e.H3.title.mb-25.mb-sm-40 meyou.ru
+							+e.P.text «Всегда есть люди, которые готовы заниматься экспортом. Профессионалов много, ваша задача их найти»
+								+e.SPAN.arr.d-block
+									+icon-svg('link-arrow')
+
+
+				.swiper-pagination
+
+		+b.SECTION.section--events#events
+			.container
+				+e.H2.__title--red.__title--w545 МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ
+				+e.SPAN.ref
+					+e.A(href="#").__ref--blue.ml-5.ml-sm-50 Больше мероприятий
+						+icon-svg('angle-right').align-middle.__title-icon--next
+
+			+b.DIV.slider-l.slider-three.swiper-container.pt-0.pt-sm-20
+				.swiper-wrapper.mb-30.mb-sm-0.pb-55
+					.swiper-slide
+						+b.A(href="#").event-block.d-block.animate-top-offset
+							+e.IMG.__img(src='img/events/ev1.png' alt='МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ')
+							.p-xss-30.pt-10
+								+e.H4.title.mb-20 «Экспорт» — конференция vc.ru
+								i.date.d-block.mb-20.mb-xss-40 22 мая 2018
+								+e.SPAN.arr.d-block
+									+icon-svg('link-arrow')
+					.swiper-slide
+						+b.A(href="#").event-block.d-block.animate-top-offset
+							+e.IMG.__img(src='img/events/ev2.png' alt='МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ')
+							.p-xss-30.pt-10
+								+e.H4.title.mb-20 Красноярский экономический форум
+								i.date.d-block.mb-20.mb-xss-40 13 июня 2018
+								+e.SPAN.arr.d-block
+									+icon-svg('link-arrow')
+					.swiper-slide
+						+b.A(href="#").event-block.d-block.animate-top-offset
+							+e.IMG.__img(src='img/events/ev3.png' alt='МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ')
+							.p-xss-30.pt-10
+								+e.H4.title.mb-20 Взрывные продажи 6.0
+								i.date.d-block.mb-20.mb-xss-40 19 октября 2018
+								+e.SPAN.arr.d-block
+									+icon-svg('link-arrow') 
+					.swiper-slide
+						+b.A(href="#").event-block.d-block.animate-top-offset
+							+e.IMG.__img(src='img/events/ev2.png' alt='МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ')
+							.p-xss-30.pt-10
+								+e.H4.title.mb-20 Красноярский экономический форум
+								i.date.d-block.mb-20.mb-xss-40 13 июня 2018
+								+e.SPAN.arr.d-block
+									+icon-svg('link-arrow')
+					.swiper-slide
+						+b.A(href="#").event-block.d-block.animate-top-offset
+							+e.IMG.__img(src='img/events/ev3.png' alt='МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ')
+							.p-xss-30.pt-10
+								+e.H4.title.mb-20 Взрывные продажи 6.0
+								i.date.d-block.mb-20.mb-xss-40 19 октября 2018
+								+e.SPAN.arr.d-block
+									+icon-svg('link-arrow') 
+
+				.swiper-pagination
+
+
+		+b.SECTION.section--banner
+			+e.__banner_overlay
+			.container
+				+e.__banner_wrap.mb-60.mb-xss-80
+					+e.H2.__title--white.mb-25 ВЗРЫВНЫЕ ПРОДАЖИ 6.0 19 ОКТЯРБЯ 2018
+					+b.__text--white Главная образовательная и коммуникационная площадка в сфере маркетинга и продаж
+
+				+b.A(href="#").btn-red.align-top Присоединиться
+
+
+		+b.SECTION.section--fhoto
+			.container
+				+e.H2.__title--red.__title--w545 ФОТОПОТОК
+				+e.ref
+					+e.A(href="#").__ref--blue.ml-5.ml-sm-50 Больше фото
+						+icon-svg('angle-right').align-middle.__title-icon--next
+
+			.container.pt-0.pt-sm-20
+				+b.DIV.slider.slider-fhour-row2.swiper-container
+					.swiper-wrapper.mb-30.mb-sm-0.pb-35.pb-sm-75
+						
+						each img in ['1', '2', '3', '4', '5', '6', '7', '8']
+							.swiper-slide.animate-top-offset.animate-scale
+								+b.A(href="#").fhoto-block.d-block.text-center
+									+e.IMG.__img(src='img/fhoto/f' + img + '.png' alt='МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ')
+
+					.swiper-pagination
+
+
+
+
+
+		+b.SECTION.section--blog#blog
+
+			.container
+				+e.H2.__title--red.__title--w545 БЛОГ
+				+e.SPAN.ref
+					+e.A(href="#").__ref--blue.ml-5.ml-sm-50 Больше статей
+						+icon-svg('angle-right').align-middle.__title-icon--next
+			.oval__fon
+				+b.DIV.slider.slider-one.swiper-container.pt-0.pt-sm-20
+					.swiper-wrapper.pb-55.pb-sm-75
+						
+						.swiper-slide
+							+b.blog-item.d-block.animate-top-offset
+								+e.wrap
+									+e.IMG.img(src='img/blog/blog.png' alt='Манукян')
+									+e.H4.title 20 трендов e-commerce
+									+e.P.text Это не красный диплом, это только что подписанное соглашение о сотрудничестве с крупнейшим в Китае маркетплейсом Tmall. Всем привет из солнечного Шанхая!По данным Media Lounge 71% покупателей идут за покупками в онлайн, потому что так удобнее…									
+						.swiper-slide
+							+b.blog-item.d-block.animate-top-offset
+								+e.wrap
+									+e.IMG.img(src='img/blog/blog.png' alt='Манукян')
+									+e.H4.title 20 трендов e-commerce
+									+e.P.text Это не красный диплом, это только что подписанное соглашение о сотрудничестве с крупнейшим в Китае маркетплейсом Tmall. Всем привет из солнечного Шанхая!По данным Media Lounge 71% покупателей идут за покупками в онлайн, потому что так удобнее…		
+						.swiper-slide
+							+b.blog-item.d-block.animate-top-offset
+								+e.wrap
+									+e.IMG.img(src='img/blog/blog.png' alt='Манукян')
+									+e.H4.title 20 трендов e-commerce
+									+e.P.text Это не красный диплом, это только что подписанное соглашение о сотрудничестве с крупнейшим в Китае маркетплейсом Tmall. Всем привет из солнечного Шанхая!По данным Media Lounge 71% покупателей идут за покупками в онлайн, потому что так удобнее…								
+
+						.swiper-slide
+							+b.blog-item.d-block.animate-top-offset
+								+e.wrap
+									+e.IMG.img(src='img/blog/blog.png' alt='Манукян')
+									+e.H4.title 20 трендов e-commerce
+									+e.P.text Это не красный диплом, это только что подписанное соглашение о сотрудничестве с крупнейшим в Китае маркетплейсом Tmall. Всем привет из солнечного Шанхая!По данным Media Lounge 71% покупателей идут за покупками в онлайн, потому что так удобнее…		
+
+					.swiper-pagination
+
+
+		+b.SECTION.section--contacts#contact
+
+			.container
+				+e.H2.__title--red КОНТАКТЫ
+				.row.pt-0.pt-sm-25
+					.col-sm-5.text-center.text-sm-left.mb-55
+						.mb-60.mt-5
+							+e.P.__text--gray.mb-5.mb-xss-30 Электронная почта
+							+e.A.__link.p(href='mailto: hello@manucan.ru') hello@manucan.ru
+
+						+e.P.__text--gray.mb-35 Социальные сети
+
+						+b.societ.justify-content-center.justify-content-sm-start
+							+e.A.item--tweeter(href='#' target='_blank' title='tweeter')
+								+icon-svg('tweeter')
+							+e.A.item--inst(href='#' target='_blank' title='instagramm')
+								+icon-svg('inst')
+							+e.A.item--f(href='#' target='_blank' title='facebook')
+								+icon-svg('f')
+
+					.col-sm-7
+						+b.FORM.form-contacts.__form(action='')
+							.row
+								.col-sm-6
+									+b.INPUT.field.w-100(type='text' placeholder='Ваше имя' name='nic')
+								.col-sm-6
+									+b.INPUT.field.w-100(type='text' placeholder='Email' name='email')                          		
+							.row.mb-0
+								.col-sm-12
+									+b.TEXTAREA.field.w-100(placeholder='Сообщение')
+
+							+e.P.__info.small *Нажимая кнопку «Отправить», вы принимаете условия «Политики обработки персональных данных»
+
+
+							+e.__contacts_btn.mt-20
+								+b.INPUT(type='submit').btn-red Отправить
+		.mb-sm-70
+
 
 	+footer 

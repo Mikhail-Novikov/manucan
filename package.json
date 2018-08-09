@@ -58,7 +58,8 @@
     "normalize.css": "^8.0.0",
     "popper.js": "^1.14.3",
     "slick-carousel": "^1.8.1",
-    "swiper": "^4.3.3"
+    "swiper": "^4.3.3",
+    "yarn": "^1.9.2"
   },
   "browserslist": [
     "> 0.5%",

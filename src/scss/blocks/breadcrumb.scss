@@ -1,8 +1,21 @@
+.section--breadcrumbs {
+  background-color: #f5f5f5;
+  .container{
+
+  }
+  .section__title{
+    margin: 0 0 12px;
+  }  
+}
+
 .breadcrumb {
-  color: #ccc0d0;
+  color: #9b9b9b;
+  font-family: 'Montserrat';
+  font-weight: 400;
   font-size: calc-scale(14);
-  line-height: (20/14);
+  line-height: (30/14);
   text-align: center;
+
 
   &__item {
     display: inline;
@@ -23,8 +36,8 @@
     }
   }
 
-  @include media-breakpoint-down(sm) {
-
+  @include media-breakpoint-up(sm) {
+    text-align: left;
     --scale: 12/14;
   }
 }

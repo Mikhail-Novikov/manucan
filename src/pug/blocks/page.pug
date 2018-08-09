@@ -11,7 +11,7 @@ mixin page(title)
       meta(name='author' content='')
       // Favicon
       //-link(rel='icon' type='image/x-icon' href='/favicon.ico')
-      //-include ../../html/favicon/favicon
+      include ../lib/favicon
       // CSS
       link(rel='stylesheet' href=`css/lib${development ? '' : '.min'}.css`)
       link(rel='stylesheet' href=`css/app${development ? '' : '.min'}.css`)

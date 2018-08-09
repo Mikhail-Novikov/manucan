@@ -1,8 +1,12 @@
-.datetime {
+.date {
   --scale: 1;
-  color: #ccc0d0;
   font-size: calc-size(14);
-  line-height: 1.25;
+	color: #9b9b9b;
+	font-family: Montserrat;
+	font-weight: 700;
+	line-height: 22px;
+	letter-spacing: 3px;
+	font-style: normal;
 
   @include media-breakpoint-down(sm) {
     --scale: 12/14;

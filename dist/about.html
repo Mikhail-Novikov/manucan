@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <title>О нас — new/Frontend</title>
+    <title>Обо Мне — new/Frontend</title>
     <!-- Meta-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no" />
@@ -9,6 +9,22 @@
     <meta name="keywords" content="" />
     <meta name="author" content="" />
     <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#161b6e">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <!-- CSS-->
     <link rel="stylesheet" href="css/lib.css" />
     <link rel="stylesheet" href="css/app.css" />
@@ -33,7 +49,7 @@
   </head>
   <body class="page__body">
     <div class="page__body-inner">
-      <header class="header">
+      <header class="header header header--innerpage">
         <div class="header__inner container-fluid mw-lg">
           <button class="header__toggle">
             <span class="header__toggle-icon"></span>
@@ -45,16 +61,28 @@
             <nav class="menu header__menu">
               <div class="menu__inner">
                 <div class="menu__item menu__item--current">
-                  <a class="menu__link" href="">Обо Мне</a>
+                  <a class="menu__link" href="#about">Обо Мне</a>
                 </div>
                 <div class="menu__item">
-                  <a class="menu__link" href="">Проекты</a>
+                  <a class="menu__link" href="#events">Проекты</a>
                 </div>
                 <div class="menu__item">
-                  <a class="menu__link" href="">Блог</a>
+                  <a class="menu__link" href="#blog">Блог</a>
                 </div>
-                <div class="menu__item">
-                  <a class="menu__link" href="">Свяжитесь со мной</a>
+                <div class="menu__item d-flex d-md-none">
+                  <a class="menu__link" href="">В СМИ </a>
+                </div>
+                <div class="menu__item d-flex d-md-none">
+                  <a class="menu__link" href="">Фото </a>
+                </div>
+                <div class="menu__item d-flex d-md-none">
+                  <a class="menu__link" href="">Мероприятия </a>
+                </div>
+                <div class="menu__item d-flex d-md-none">
+                  <a class="menu__link" href="">Контакты</a>
+                </div>
+                <div class="menu__item d-none d-md-flex">
+                  <a class="menu__link" href="#contact">Свяжитесь со мной</a>
                 </div>
               </div>
             </nav>
@@ -85,76 +113,276 @@
           </div>
         </div>
       </header>
-      <section class="section pb-20 pb-sm-70"></section>
-      <div class="container">
-        <h3 class="title mb-25">КАТЕГОРИИ</h3>
-      </div>
-      <div class="slider swiper-container container">
-        <div class="swiper-wrapper mb-30 mb-sm-0 pb-60">
-          <div class="swiper-slide">
-            <img src="img/contents/eqld1.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/contents/eqld2.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/contents/eqld3.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/contents/eqld4.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/contents/eqld1.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/contents/eqld2.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/contents/eqld3.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/contents/eqld4.png" alt="" />
+      <section class="section section--breadcrumbs mb-sm-50">
+        <div class="container">
+          <div class="row">
+            <div class="offset-xss-2 col-sm-10">
+              <h1 class="section__title section__title--red text-uppercase">ОБО МНЕ</h1>
+              <nav class="breadcrumb">
+                <div class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="index.html">Главная</a>
+                </div>
+                <div class="breadcrumb__item">Обо Мне</div>
+              </nav>
+            </div>
           </div>
         </div>
-        <div class="swiper-button">
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <div class="slider swiper-container container">
-        <div class="swiper-wrapper mb-30 mb-sm-0 pb-60">
-          <div class="swiper-slide">
-            <img src="img/contents/eqld1.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/contents/eqld2.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/contents/eqld3.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/contents/eqld4.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/contents/eqld1.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/contents/eqld2.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/contents/eqld3.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/contents/eqld4.png" alt="" />
+      </section>
+      <section class="section section--about">
+        <div class="container">
+          <div class="row">
+            <div class="offset-md-2 col-md-5 offset-xss-1 col-xss-10">
+              <p class="section__text section__text--gray mb-50 mt-30 mt-sm-0">Меня зовут Армен Манукян,</p>
+              <div class="mb-0 mb-sm-45">
+                <P class="mb-15"> в течение последних двух лет я курирую рабочую группу Экспертного совета по цифровой экономике и блокчейн технологиям при Государственной Думе РФ.</P>
+                <P class="mb-15"> Я руковожу проектом по развитию цифровых услуг в Российском экспортном центре.</P>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="swiper-button">
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+      </section>
+      <section class="section section--documents">
+        <div class="section__doc">
+          <h2 class="section__title_innerpage section__title_innerpage--white mb-45">Награды, дипломы и сертификаты</h2>
+          <div class="slider slider-two-row2 swiper-container">
+            <div class="swiper-wrapper mb-30 mb-sm-0 pb-40 pb-sm-40">
+              <div class="swiper-slide">
+                <a class="doc_item" href="#">
+                  <svg class="icon-svg-doc-pdf" role="img">
+                    <use xlink:href="#icon-svg-doc-pdf"></use>
+                  </svg>
+                  <div class="doc_item_text">
+                    <p class="doc_item__doc_text doc_item__doc_text--white">Сертификат о повышении квалификации по программе «Менеджмент в сфере интернет-бизнеса»</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="doc_item" href="#">
+                  <svg class="icon-svg-doc-pdf" role="img">
+                    <use xlink:href="#icon-svg-doc-pdf"></use>
+                  </svg>
+                  <div class="doc_item_text">
+                    <p class="doc_item__doc_text doc_item__doc_text--white">Грамота о повышении квалификации по программе «Менеджмент в сфере интернет-бизнеса»</p>
+                    <p class="doc_item__doc_text doc_item__doc_text--gray">pdf,
+                      <span class="count">1.22 </span>
+                      <span>мб</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="doc_item" href="#">
+                  <svg class="icon-svg-doc-pdf" role="img">
+                    <use xlink:href="#icon-svg-doc-pdf"></use>
+                  </svg>
+                  <div class="doc_item_text">
+                    <p class="doc_item__doc_text doc_item__doc_text--white">Диплом Российского экономического университета о подготовке по специальности «Менеджмент в сфере торговли и товароведения»</p>
+                    <p class="doc_item__doc_text doc_item__doc_text--gray">pdf,
+                      <span class="count">1.4 </span>
+                      <span>мб</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="doc_item" href="#">
+                  <svg class="icon-svg-doc-pdf" role="img">
+                    <use xlink:href="#icon-svg-doc-pdf"></use>
+                  </svg>
+                  <div class="doc_item_text">
+                    <p class="doc_item__doc_text doc_item__doc_text--white">Сертификат университета о подготовке по специальности «Менеджмент в сфере предпринимательства»</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="doc_item" href="#">
+                  <svg class="icon-svg-doc-pdf" role="img">
+                    <use xlink:href="#icon-svg-doc-pdf"></use>
+                  </svg>
+                  <div class="doc_item_text">
+                    <p class="doc_item__doc_text doc_item__doc_text--white">Сертификат о повышении квалификации по программе «Менеджмент в сфере интернет-бизнеса»</p>
+                    <p class="doc_item__doc_text doc_item__doc_text--gray">pdf,
+                      <span class="count">0.8 </span>
+                      <span>мб</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="doc_item" href="#">
+                  <svg class="icon-svg-doc-pdf" role="img">
+                    <use xlink:href="#icon-svg-doc-pdf"></use>
+                  </svg>
+                  <div class="doc_item_text">
+                    <p class="doc_item__doc_text doc_item__doc_text--white">Диплом о прохождении программы «Блокчейн-решения для аутентификации торговой документации»</p>
+                    <p class="doc_item__doc_text doc_item__doc_text--gray">pdf,
+                      <span class="count">0.55 </span>
+                      <span>мб</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination--white"></div>
+          </div>
         </div>
-        <div class="swiper-pagination"></div>
-      </div>
+      </section>
+      <section class="section section--career">
+        <div class="container">
+          <div class="row">
+            <div class="offset-lg-2 col-lg-9 offset-sm-1 col-sm-10">
+              <h2 class="section__title_innerpage section__title_innerpage--gray mb-30 text-center text-sm-left">Опыт работы</h2>
+              <div class="career__block">
+                <div class="slider-l slider-career swiper-container">
+                  <div class="swiper-wrapper mb-30 mb-sm-0 pb-25 pb-sm-40">
+                    <div class="swiper-slide">
+                      <div class="career__block_row">
+                        <span>Экспертный совет по цифровой экономике и блокчейн технологиям при Государственной Думе РФ</span>
+                        <span>Куратор рабочей группы</span>
+                        <span>Октябрь 2017 — настоящее время</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="career__block_row">
+                        <span>Российский экспортный центр</span>
+                        <span>Руководитель проекта по развитию цифровых услуг</span>
+                        <span>Февраль 2017 — настоящее время</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="career__block_row">
+                        <span>АКИТ — Ассоциация компаний интернет-торговли</span>
+                        <span>Глава комитета по онлайн-торговле продуктами питания и алкоголем</span>
+                        <span>2016 — 2017</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="career__block_row">
+                        <span>Auchan</span>
+                        <span>Project Manager, E-Commerce</span>
+                        <span>2015 — 2017</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="career__block_row">
+                        <span>OBI</span>
+                        <span>Internet Analyst</span>
+                        <span>2014 — 2015</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="career__block_row">
+                        <span>Smokepoint</span>
+                        <span>Co-Founder / Partner</span>
+                        <span>2013 — 2014</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="career__block_row">
+                        <span>Manark</span>
+                        <span>Founder</span>
+                        <span>2012 — 2014</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="career__block_row">
+                        <span>METRO Cash and Carry Russia</span>
+                        <span>Internet Marketing Specialist</span>
+                        <span>2012 — 2013</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="career__block_row">
+                        <span>Rusnano</span>
+                        <span>Analyst</span>
+                        <span>2011 — 2012</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--fb">
+        <div class="section__banner_overlay"></div>
+        <div class="container">
+          <div class="row justify-content-center mt-20 mb-20">
+            <div class="justify-content-right d-flex mr-xss-35 mr-0">
+              <div class="section__banner_wrap">
+                <h4 class="section__title section__title--white m-0 mb-40 mb-sm-0">МОЯ СТРАНИЦА НА FACEBOOK</h4>
+              </div>
+            </div>
+            <div class="justify-content-left">
+              <a class="btn-red align-top" href="#">Подписаться
+                <svg class="icon-svg-fb-btn d-inline-block align-middle" role="img">
+                  <use xlink:href="#icon-svg-fb-btn"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__inner-top container-fluid mw-lg">
+          <div class="row">
+            <div class="col-lg-2 d-flex flex-column flex-lg-row align-items-center justify-content-between">
+              <div class="footer__logo mb-20 mb-lg-0">MANUCAN</div>
+            </div>
+            <div class="col-lg-8 col-md-9 d-flex align-items-center justify-content-lg-center justify-content-md-start justify-content-center">
+              <nav class="footer__menu">
+                <div class="footer__menu-inner flex-xss-row">
+                  <a class="footer__menu-item" href="">Обо мне</a>
+                  <a class="footer__menu-item" href="">Проекты</a>
+                  <a class="footer__menu-item" href="">Блог</a>
+                  <a class="footer__menu-item" href="">В СМИ</a>
+                  <a class="footer__menu-item" href="">Фото</a>
+                  <a class="footer__menu-item" href="">Мероприятия</a>
+                  <a class="footer__menu-item" href="">Контакты</a>
+                </div>
+              </nav>
+            </div>
+            <div class="col-lg-2 col-md-3 d-flex flex-column flex-lg-row align-items-lg-center justify-content-end">
+              <div class="footer__soc-net">
+                <div class="footer__soc-net-inner">
+                  <a class="footer__soc-net-item footer__soc-net-item--tw" href="" target="_blank" title="tweeter">
+                    <svg class="icon-svg-tweeter" role="img">
+                      <use xlink:href="#icon-svg-tweeter"></use>
+                    </svg>
+                  </a>
+                  <a class="footer__soc-net-item footer__soc-net-item--inst" href="" target="_blank" title="instagramm">
+                    <svg class="icon-svg-inst" role="img">
+                      <use xlink:href="#icon-svg-inst"></use>
+                    </svg>
+                  </a>
+                  <a class="footer__soc-net-item footer__soc-net-item--f" href="" target="_blank" title="facebook">
+                    <svg class="icon-svg-f" role="img">
+                      <use xlink:href="#icon-svg-f"></use>
+                    </svg>
+                  </a>
+                  <a class="footer__soc-net-item footer__soc-net-item--mail" href="" target="_blank" title="mail">
+                    <svg class="icon-svg-mail-logo" role="img">
+                      <use xlink:href="#icon-svg-mail-logo"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__inner-bottom container-fluid mw-lg">
+          <div class="footer__copyright">©2018 Все права защищены</div>
+          <div class="footer__dev">Разработка сайта
+            <a class="footer__dev-link" href="" target="_blank">
+              <svg class="icon-svg-empire-logo-blue footer__dev-logo" role="img">
+                <use xlink:href="#icon-svg-empire-logo-blue"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
     <!-- JS -->
     <script src="js/lib.js"></script>

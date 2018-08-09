@@ -8,3 +8,4 @@ import $ from 'jquery';
 
 cssVars();
 window.jQuery = window.$ = $;
+

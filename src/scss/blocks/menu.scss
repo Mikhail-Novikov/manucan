@@ -2,7 +2,6 @@
   font-family: 'Montserrat';
   font-weight: bold;
   font-style: normal;
-  overflow: hidden;
 
   &__inner {
     display: flex;
@@ -13,7 +12,6 @@
   &__item {
     display: flex;
     justify-content: center;
-    margin: 7px;
 
     &--current {
       .menu__link {
@@ -44,11 +42,12 @@
     &__inner {
       flex-flow: row;
       margin: -25px;
+      padding: 15px 0;
     }
 
     &__item {
       min-width: 0.1Px;
-      margin: 25px;
+      padding: 0 25px;
     }
 
     &__link {
@@ -57,7 +56,7 @@
       font-size: 16px;
       font-weight: 600;
       line-height: 19px;
-      padding: 4px 0;
+      padding: 24px 0;
     }
   }
 }

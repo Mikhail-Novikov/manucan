@@ -7,7 +7,10 @@ import partners from './blocks/partners';
 import gallery from './blocks/gallery';
 import carousel_1 from './blocks/carousel-1';
 import './blocks/popup';
-import swiper_default from './blocks/swiper_default';  // файл app.js получил фунцкцию swiper_default
+
+import swiper from './blocks/swiper';  // файл app.js получил фунцкцию swiper_default
+import swiper_l from './blocks/swiper_l';  // файл app.js получил фунцкцию swiper_default
+import coverImg from './blocks/coverImg';  
 
 $(() => {
 	vars();
@@ -16,5 +19,8 @@ $(() => {
   partners();
   gallery();
   carousel_1();
-  swiper_default();  //  запуск функции swiper_default 
+  swiper_l();  //  запуск функции swiper_l 
+  swiper();  //  запуск функции swiper_l
+  coverImg();   
 });
+

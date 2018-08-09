@@ -183,3 +183,9 @@ Temporary Items
 *.sqlite
 
 .idea
+
+# my file #
+######################
+
+/README.md
+.gitignore

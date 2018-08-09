@@ -1,25 +1,20 @@
 .footer {
-  background-color: #fcfcfc;
+  background-color: #f5f5f5;
 
   &__inner-top {
     padding-top: 30px;
     padding-bottom: 30px;
 
-    &::after {
-      content: '';
-      display: block;
-      height: 1px;
-      background-color: #ccc0d0;
-      margin: 30px 10px -30px;
-    }
+
   }
 
   &__logo {
     font-size: 18px;
     margin-bottom: 20px;
     font-family: 'Montserrat';
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
+    letter-spacing: 2px;
   }
 
   &__date {
@@ -39,43 +34,47 @@
 
   &__soc-net-inner {
     display: flex;
+    justify-content: center;   
     flex-wrap: wrap;
     margin: -5px;
   }
 
+
   &__soc-net-item {
     color: $color-base;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 25px;   
     display: flex;
-    justify-content: center;
+
     align-items: center;
     margin: 5px;
     transition: $transition-color;
+    justify-content: center;
 
     &:hover {
       color: $color-link;
     }
 
-    &--fb {
-      font-size: 16px;
+    &--tw {
+      font-size: 31px;
     }
   }
 
   &__menu {
-    overflow: hidden;
+    margin-bottom: 20px;
   }
 
   &__menu-inner {
     display: flex;
     flex-flow: column;
+    justify-content: center;
     margin: -5px;
   }
 
   &__menu-item {
     color: $color-base;
     text-decoration: none;
-    text-align: right;
+    text-align: center;
     font-size: 14px;
     line-height: 17px;
     font-family: 'Montserrat';
@@ -96,7 +95,6 @@
     text-align: center;
     display: flex;
     flex-flow: column;
-    padding-top: 25px;
     padding-bottom: 25px;
 
     a {
@@ -129,14 +127,18 @@
     font-size: 26px;
   }
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     &__inner-top {
-      padding-top: 35px;
+      padding-top: 60px;
       padding-bottom: 0;
 
       &::after {
         content: normal;
       }
+    }
+
+    &__menu {
+      margin-bottom: 0;
     }
 
     &__logo {
@@ -164,6 +166,7 @@
 
     &__menu-item {
       margin: 10px 15px;
+      font-size: 16px;
     }
 
     &__inner-bottom {
@@ -171,8 +174,12 @@
       flex-flow: row;
       justify-content: space-between;
       align-items: baseline;
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+
+    &__soc-net-inner {
+      justify-content: flex-end; 
     }
 
     &__copyright {

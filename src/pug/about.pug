@@ -2,76 +2,174 @@ include lib/variables
 include lib/mixins
 include blocks/page
 include blocks/header
-
+include blocks/breadcrumb
+include blocks/footer
 
 +page(pagesList.about.title)
-	+header
-	section.section.pb-20.pb-sm-70
-	.container
-		h3.title.mb-25 КАТЕГОРИИ
-
-	.slider.swiper-container.container
-		.swiper-wrapper.mb-30.mb-sm-0.pb-60
-			.swiper-slide
-				img(src="img/contents/eqld1.png", alt="")
-			.swiper-slide
-				img(src="img/contents/eqld2.png", alt="")
-			.swiper-slide
-				img(src="img/contents/eqld3.png", alt="")
-			.swiper-slide
-				img(src="img/contents/eqld4.png", alt="")
-			.swiper-slide
-				img(src="img/contents/eqld1.png", alt="")
-			.swiper-slide
-				img(src="img/contents/eqld2.png", alt="")
-			.swiper-slide
-				img(src="img/contents/eqld3.png", alt="")
-			.swiper-slide
-				img(src="img/contents/eqld4.png", alt="")
-		.swiper-button
-			.swiper-button-next
-
-
-			.swiper-button-prev
-
-
-		.swiper-pagination
+	+header('header--innerpage')
+	+b.SECTION.section--breadcrumbs.mb-sm-50
+		.container
+			.row
+				.offset-xss-2.col-sm-10
+					+e.H1.__title--red.text-uppercase ОБО МНЕ
+					+breadcrumb([pagesList.about])
 
 
 
+	+b.SECTION.section--about
+		.container
+			.row
+				.offset-md-2.col-md-5.offset-xss-1.col-xss-10
+					+e.P.__text--gray.mb-50.mt-30.mt-sm-0 Меня зовут Армен Манукян,
 
-
-	.slider.swiper-container.container
-		.swiper-wrapper.mb-30.mb-sm-0.pb-60
-			.swiper-slide
-				img(src="img/contents/eqld1.png", alt="")
-			.swiper-slide
-				img(src="img/contents/eqld2.png", alt="")
-			.swiper-slide
-				img(src="img/contents/eqld3.png", alt="")
-			.swiper-slide
-				img(src="img/contents/eqld4.png", alt="")
-			.swiper-slide
-				img(src="img/contents/eqld1.png", alt="")
-			.swiper-slide
-				img(src="img/contents/eqld2.png", alt="")
-			.swiper-slide
-				img(src="img/contents/eqld3.png", alt="")
-			.swiper-slide
-				img(src="img/contents/eqld4.png", alt="")
-		.swiper-button
-			.swiper-button-next
-
-
-			.swiper-button-prev
-
-
-		.swiper-pagination
+					.mb-0.mb-sm-45
+						P.mb-15  в течение последних двух лет я курирую рабочую группу Экспертного совета по цифровой экономике и блокчейн технологиям при Государственной Думе РФ.
+						P.mb-15  Я руковожу проектом по развитию цифровых услуг в Российском экспортном центре.
 
 
 
+	+b.SECTION.section--documents
+		+b.__doc
+			+e.H2.title_innerpage--white.mb-45 Награды, дипломы и сертификаты
+
+			+b.DIV.slider.slider-two-row2.swiper-container
+				.swiper-wrapper.mb-30.mb-sm-0.pb-40.pb-sm-40
+					.swiper-slide
+						+b.A(href="#").doc_item 
+							+icon-svg('doc-pdf')
+							.doc_item_text 
+								+e.P.doc_text--white Сертификат о повышении квалификации по программе «Менеджмент в сфере интернет-бизнеса»
+								//- +e.P.doc_text--gray pdf, 
+								//- 	span.count 0.8 
+								//- 	span мб
+
+					.swiper-slide
+						+b.A(href="#").doc_item 
+							+icon-svg('doc-pdf')
+							.doc_item_text 
+								+e.P.doc_text--white Грамота о повышении квалификации по программе «Менеджмент в сфере интернет-бизнеса»
+								+e.P.doc_text--gray pdf, 
+									span.count 1.22 
+									span мб
+
+					.swiper-slide
+						+b.A(href="#").doc_item 
+							+icon-svg('doc-pdf')
+							.doc_item_text 
+								+e.P.doc_text--white Диплом Российского экономического университета о подготовке по специальности «Менеджмент в сфере торговли и товароведения»
+								+e.P.doc_text--gray pdf, 
+									span.count 1.4 
+									span мб
+
+					.swiper-slide
+						+b.A(href="#").doc_item 
+							+icon-svg('doc-pdf')
+							.doc_item_text 
+								+e.P.doc_text--white Сертификат университета о подготовке по специальности «Менеджмент в сфере предпринимательства»
+								//- +e.P.doc_text--gray pdf, 
+								//- 	span.count 0.8 
+								//- 	span мб
+
+					.swiper-slide
+						+b.A(href="#").doc_item 
+							+icon-svg('doc-pdf')
+							.doc_item_text 
+								+e.P.doc_text--white Сертификат о повышении квалификации по программе «Менеджмент в сфере интернет-бизнеса»
+								+e.P.doc_text--gray pdf, 
+									span.count 0.8 
+									span мб
+
+					.swiper-slide
+						+b.A(href="#").doc_item 
+							+icon-svg('doc-pdf')
+							.doc_item_text 
+								+e.P.doc_text--white Диплом о прохождении программы «Блокчейн-решения для аутентификации торговой документации»
+								+e.P.doc_text--gray pdf, 
+									span.count 0.55 
+									span мб
+
+				.swiper-pagination.swiper-pagination--white
+
+
+	+b.SECTION.section--career
+		.container
+			.row
+				.offset-lg-2.col-lg-9.offset-sm-1.col-sm-10
+					+e.H2.title_innerpage--gray.mb-30.text-center.text-sm-left Опыт работы
+
+					+b.career__block
+						+b.DIV.slider-l.slider-career.swiper-container
+							.swiper-wrapper.mb-30.mb-sm-0.pb-25.pb-sm-40
+								.swiper-slide
+									.career__block_row
+										span Экспертный совет по цифровой экономике и блокчейн технологиям при Государственной Думе РФ
+										span Куратор рабочей группы
+										span Октябрь 2017 - настоящее время
+
+								.swiper-slide
+									.career__block_row
+										span Российский экспортный центр
+										span Руководитель проекта по развитию цифровых услуг
+										span Февраль 2017 - настоящее время
+
+								.swiper-slide
+									.career__block_row
+										span АКИТ - Ассоциация компаний интернет-торговли
+										span Глава комитета по онлайн-торговле продуктами питания и алкоголем
+										span 2016 - 2017
+
+								.swiper-slide
+									.career__block_row
+										span Auchan
+										span Project Manager, E-Commerce
+										span 2015 - 2017
+
+								.swiper-slide
+									.career__block_row
+										span OBI
+										span Internet Analyst
+										span 2014 - 2015
+
+								.swiper-slide
+									.career__block_row
+										span Smokepoint
+										span Co-Founder / Partner
+										span 2013 - 2014
+
+								.swiper-slide
+									.career__block_row
+										span Manark
+										span Founder
+										span 2012 - 2014
+
+								.swiper-slide
+									.career__block_row
+										span METRO Cash and Carry Russia
+										span Internet Marketing Specialist
+										span 2012 - 2013
+
+								.swiper-slide
+									.career__block_row
+										span Rusnano
+										span Analyst
+										span 2011 - 2012
+
+							.swiper-pagination
 
 
 
 
+	+b.SECTION.section--fb
+		+e.__banner_overlay
+		.container
+			.row.justify-content-center.mt-20.mb-20
+				.justify-content-right.d-flex.mr-xss-35.mr-0
+					+e.__banner_wrap
+						+e.H4.__title--white.m-0.mb-40.mb-sm-0 МОЯ СТРАНИЦА НА FACEBOOK
 
+				.justify-content-left
+					+b.A(href="#").btn-red.align-top Подписаться
+						+icon-svg('fb-btn').d-inline-block.align-middle
+
+
+	+footer 

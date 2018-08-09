@@ -2,11 +2,21 @@ mixin menu
   +b.NAV.menu&attributes(attributes)
     +e.__inner
       +e.__item--current
-        +e.A.__link(href='') Обо Мне
+        +e.A.__link(href='#about') Обо Мне
       +e.__item
-        +e.A.__link(href='') Проекты
+        +e.A.__link(href='#events') Проекты
       +e.__item
-        +e.A.__link(href='') Блог
-      +e.__item
-        +e.A.__link(href='') Свяжитесь со мной
+        +e.A.__link(href='#blog') Блог
 
+      +e.__item.d-flex.d-md-none
+        +e.A.__link(href='') В СМИ  
+      +e.__item.d-flex.d-md-none
+        +e.A.__link(href='') Фото 
+      +e.__item.d-flex.d-md-none
+        +e.A.__link(href='') Мероприятия                     
+      +e.__item.d-flex.d-md-none
+        +e.A.__link(href='') Контакты
+
+
+      +e.__item.d-none.d-md-flex
+        +e.A.__link(href='#contact') Свяжитесь со мной

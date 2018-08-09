@@ -124,14 +124,21 @@ var _carousel4 = _interopRequireDefault(_carousel3);
 
 __webpack_require__(12);
 
-var _swiper_default = __webpack_require__(14);
+var _swiper = __webpack_require__(14);
 
-var _swiper_default2 = _interopRequireDefault(_swiper_default);
+var _swiper2 = _interopRequireDefault(_swiper);
+
+var _swiper_l = __webpack_require__(18);
+
+var _swiper_l2 = _interopRequireDefault(_swiper_l);
+
+var _coverImg = __webpack_require__(19);
+
+var _coverImg2 = _interopRequireDefault(_coverImg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // файл app.js получил фунцкцию swiper_default
-
 $(function () {
   (0, _vars2.default)();
   (0, _header2.default)();
@@ -139,8 +146,10 @@ $(function () {
   (0, _partners2.default)();
   (0, _gallery2.default)();
   (0, _carousel4.default)();
-  (0, _swiper_default2.default)(); //  запуск функции swiper_default 
-});
+  (0, _swiper_l2.default)(); //  запуск функции swiper_l 
+  (0, _swiper2.default)(); //  запуск функции swiper_l
+  (0, _coverImg2.default)();
+}); // файл app.js получил фунцкцию swiper_default
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(2)))
 
 /***/ }),
@@ -9186,20 +9195,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 // получить от модуля swiper Swiper конструктор
 
-exports.default = swiper_default; // отдаём функцию swiper_default в глобальную обл видимости
+exports.default = swiper; // отдаём функцию swiper_default в глобальную обл видимости
 
 
-/*carousel.slickOptions = {
-  infinite: false,
-  prevArrow: '<button type="button" class="slick-prev slick-arrow"><svg role="img" class="icon-svg-angle-right">\n' +
-  '<use xlink:href="#icon-svg-angle-right"></use>\n' +
-  '</svg></button>',
-  nextArrow: '<button type="button" class="slick-next slick-arrow"><svg role="img" class="icon-svg-angle-right">\n' +
-  '<use xlink:href="#icon-svg-angle-right"></use>\n' +
-  '</svg></button>'
-};*/
-
-function swiper_default() {
+function swiper() {
   var screenWidth = $(window).width();;
 
   $(window).on('resize', function () {
@@ -9210,59 +9209,132 @@ function swiper_default() {
   initSwiper();
 
   function initSwiper() {
-    console.log(screenWidth);
+    console.log('init swiper');
 
     $('.slider').each(function (index) {
       var slider = $(this);
-      var chSlider = undefined;
 
-      if (screenWidth < 1200 && chSlider == undefined) {
-        var _ref;
+      if (slider.hasClass('slider-three')) {
+        var _set;
 
-        chSlider = new _swiper2.default(slider, (_ref = {
-          slidesPerView: 1,
-          spaceBetween: 15,
+        var set = (_set = {
+          slidesPerView: 3,
+          spaceBetween: 35,
+          loop: true,
+          centeredSlides: true,
           watchOverflow: true,
           autoplay: {
             delay: 50000
-          },
-          slidesPerColumn: 3,
-          slidesPerColumnFill: 'row'
-        }, _defineProperty(_ref, 'watchOverflow', true), _defineProperty(_ref, 'breakpoints', {
+          }
+        }, _defineProperty(_set, 'watchOverflow', true), _defineProperty(_set, 'breakpoints', {
           1200: {
-            slidesPerView: 4,
+            slidesPerView: 2,
             spaceBetween: 20,
-            slidesPerColumnFill: 'column',
-            slidesPerColumn: 1
+            centeredSlides: false
           },
 
           850: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+            centeredSlides: false
+          },
+          650: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            centeredSlides: true
+          }
+        }), _defineProperty(_set, 'pagination', {
+          el: '.swiper-pagination',
+          clickable: true
+        }), _set);
+      } else if (slider.hasClass('slider-fhour-row2')) {
+        var _set2;
+
+        var set = (_set2 = {
+          slidesPerView: 4,
+          spaceBetween: 35,
+          watchOverflow: true,
+          slidesPerColumn: 2,
+          autoplay: {
+            delay: 50000
+          }
+        }, _defineProperty(_set2, 'watchOverflow', true), _defineProperty(_set2, 'breakpoints', {
+          1200: {
             slidesPerView: 3,
             spaceBetween: 20,
-            slidesPerColumn: 3
+            centeredSlides: false
           },
-          560: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            slidesPerColumn: 3
+
+          1000: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+            centeredSlides: false
           },
-          320: {
+          650: {
             slidesPerView: 1,
+            spaceBetween: 15,
+            centeredSlides: true,
+            slidesPerColumn: 1
+          }
+        }), _defineProperty(_set2, 'pagination', {
+          el: '.swiper-pagination',
+          clickable: true
+        }), _set2);
+      } else if (slider.hasClass('slider-one')) {
+        var _set3;
+
+        var set = (_set3 = {
+          slidesPerView: 1,
+          centeredSlides: true,
+          loop: true,
+          effect: 'flip',
+          flipEffect: {
+            rotate: 30,
+            slideShadows: false
+          },
+          watchOverflow: true,
+          autoplay: {
+            delay: 500000
+          }
+        }, _defineProperty(_set3, 'watchOverflow', true), _defineProperty(_set3, 'pagination', {
+          el: '.swiper-pagination',
+          clickable: true
+        }), _set3);
+      } else if (slider.hasClass('slider-two-row2')) {
+        var _set4;
+
+        var set = (_set4 = {
+          slidesPerView: 2,
+          spaceBetween: 35,
+          watchOverflow: true,
+          slidesPerColumn: 3,
+          autoplay: {
+            delay: 50000
+          }
+        }, _defineProperty(_set4, 'watchOverflow', true), _defineProperty(_set4, 'breakpoints', {
+          1200: {
+            slidesPerView: 2,
             spaceBetween: 20,
+            centeredSlides: false
+          },
+
+          1000: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+            centeredSlides: false
+          },
+          800: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            centeredSlides: true,
             slidesPerColumn: 3
           }
-        }), _defineProperty(_ref, 'pagination', {
-          el: '.swiper-pagination'
-        }), _defineProperty(_ref, 'navigation', {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        }), _ref));
-      } else if (screenWidth > 1200 && chSlider != undefined) {
-        chSlider.destroy();
-        chSlider = undefined;
-        slider.find('.swiper-wrapper').removeAttr('style');
-        slider.find('.swiper-slide').removeAttr('style');
+        }), _defineProperty(_set4, 'pagination', {
+          el: '.swiper-pagination',
+          clickable: true
+        }), _set4);
       }
+      var chSlider = new _swiper2.default(slider, set);
     });
   }
 }
@@ -17424,7 +17496,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "window", function() { return win; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "document", function() { return doc; });
 /**
- * SSR Window 1.0.1
+ * SSR Window 1.0.0
  * Better handling for window object in SSR environment
  * https://github.com/nolimits4web/ssr-window
  *
@@ -17432,72 +17504,288 @@ __webpack_require__.r(__webpack_exports__);
  *
  * Licensed under MIT
  *
- * Released on: July 18, 2018
+ * Released on: February 10, 2018
  */
-var doc = (typeof document === 'undefined') ? {
-  body: {},
-  addEventListener: function addEventListener() {},
-  removeEventListener: function removeEventListener() {},
-  activeElement: {
-    blur: function blur() {},
-    nodeName: '',
-  },
-  querySelector: function querySelector() {
-    return null;
-  },
-  querySelectorAll: function querySelectorAll() {
-    return [];
-  },
-  getElementById: function getElementById() {
-    return null;
-  },
-  createEvent: function createEvent() {
-    return {
-      initEvent: function initEvent() {},
-    };
-  },
-  createElement: function createElement() {
-    return {
-      children: [],
-      childNodes: [],
-      style: {},
-      setAttribute: function setAttribute() {},
-      getElementsByTagName: function getElementsByTagName() {
-        return [];
-      },
-    };
-  },
-  location: { hash: '' },
-} : document; // eslint-disable-line
+var d;
+if (typeof document === 'undefined') {
+  d = {
+    body: {},
+    addEventListener: function addEventListener() {},
+    removeEventListener: function removeEventListener() {},
+    activeElement: {
+      blur: function blur() {},
+      nodeName: '',
+    },
+    querySelector: function querySelector() {
+      return null;
+    },
+    querySelectorAll: function querySelectorAll() {
+      return [];
+    },
+    getElementById: function getElementById() {
+      return null;
+    },
+    createEvent: function createEvent() {
+      return {
+        initEvent: function initEvent() {},
+      };
+    },
+    createElement: function createElement() {
+      return {
+        children: [],
+        childNodes: [],
+        style: {},
+        setAttribute: function setAttribute() {},
+        getElementsByTagName: function getElementsByTagName() {
+          return [];
+        },
+      };
+    },
+    location: { hash: '' },
+  };
+} else {
+  // eslint-disable-next-line
+  d = document;
+}
 
-var win = (typeof window === 'undefined') ? {
-  document: doc,
-  navigator: {
-    userAgent: '',
-  },
-  location: {},
-  history: {},
-  CustomEvent: function CustomEvent() {
-    return this;
-  },
-  addEventListener: function addEventListener() {},
-  removeEventListener: function removeEventListener() {},
-  getComputedStyle: function getComputedStyle() {
-    return {
-      getPropertyValue: function getPropertyValue() {
-        return '';
-      },
-    };
-  },
-  Image: function Image() {},
-  Date: function Date() {},
-  screen: {},
-  setTimeout: function setTimeout() {},
-  clearTimeout: function clearTimeout() {},
-} : window; // eslint-disable-line
+var doc = d;
+
+var w;
+if (typeof window === 'undefined') {
+  w = {
+    document: doc,
+    navigator: {
+      userAgent: '',
+    },
+    location: {},
+    history: {},
+    CustomEvent: function CustomEvent() {
+      return this;
+    },
+    addEventListener: function addEventListener() {},
+    removeEventListener: function removeEventListener() {},
+    getComputedStyle: function getComputedStyle() {
+      return {
+        getPropertyValue: function getPropertyValue() {
+          return '';
+        },
+      };
+    },
+    Image: function Image() {},
+    Date: function Date() {},
+    screen: {},
+    setTimeout: function setTimeout() {},
+    clearTimeout: function clearTimeout() {},
+  };
+} else {
+  // eslint-disable-next-line
+  w = window;
+}
+
+var win = w;
 
 
 
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _swiper = __webpack_require__(15);
+
+var _swiper2 = _interopRequireDefault(_swiper);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+// получить от модуля swiper Swiper конструктор
+
+exports.default = swiper_l; // отдаём функцию swiper_default в глобальную обл видимости
+
+
+function swiper_l() {
+  var screenWidth = $(window).width();;
+
+  $(window).on('resize', function () {
+    initSwiper();
+    screenWidth = $(window).width();
+  });
+
+  initSwiper();
+
+  function initSwiper() {
+    console.log('init swiper_low');
+
+    $('.slider-l').each(function (index) {
+      var slider = $(this);
+      var chSlider = undefined;
+
+      if (screenWidth < 1007 && chSlider == undefined) {
+
+        if (slider.hasClass('slider-career')) {
+          var _set;
+
+          var set = (_set = {
+            slidesPerView: 3,
+            spaceBetween: 35,
+            watchOverflow: true,
+            autoplay: {
+              delay: 50000
+            }
+          }, _defineProperty(_set, 'watchOverflow', true), _defineProperty(_set, 'breakpoints', {
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 20
+            },
+
+            850: {
+              slidesPerView: 2,
+              spaceBetween: 25,
+              loop: true
+            },
+            650: {
+              slidesPerView: 1,
+              spaceBetween: 20
+            }
+
+          }), _defineProperty(_set, 'pagination', {
+            el: '.swiper-pagination',
+            clickable: true
+          }), _defineProperty(_set, 'navigation', {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          }), _set);
+        }
+
+        chSlider = new _swiper2.default(slider, set);
+      } else if (screenWidth > 1007 && chSlider != undefined) {
+        chSlider.destroy();
+        chSlider = undefined;
+        slider.find('.swiper-wrapper').removeAttr('style');
+        slider.find('.swiper-slide').removeAttr('style');
+      }
+    });
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(2)))
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(jQuery, $) {
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+exports.default = coverImg;
+
+
+function coverImg() {
+    (function ($) {
+        var methods = {
+            init: function init(options) {
+                var p = {
+                    parent: $(window),
+                    position: 'absolute',
+                    veticalAlign: 'middle',
+                    align: 'center'
+                };
+                if (options) {
+                    $.extend(p, options);
+                }
+                return this.each(function () {
+                    var positionEl;
+                    if (p.position == 'absolute' || p.position == 'fixed') {
+                        positionEl = p.position;
+                    } else {
+                        positionEl = 'absolute';
+                    }
+                    var elWrap = $('<div>').addClass('fullsizeWrap').css({ left: '0', top: '0', width: '100%', height: '100%', overflow: 'hidden', position: positionEl }),
+                        el = $(this).css({ position: 'absolute', maxWidth: 'none', minWidth: 0, maxHeight: 'none', minHeight: 0 }).wrap(elWrap),
+                        parent = el.closest(p.parent).addClass('coverParent');
+                    if ($.isWindow(p.parent[0])) {
+                        parent = $(window);
+                    }
+
+                    var elClone = el.clone().removeAttr('class').removeAttr('width').removeAttr('height').css({ left: '-9999px', top: '-9999px' }).appendTo('body'),
+                        elCloneW = elClone.width(),
+                        elCloneH = elClone.height(),
+                        wW = parent.width(),
+                        wH = parent.height(),
+                        elFactor = elCloneW / elCloneH,
+                        wFactor = wW / wH;
+
+                    var fullSizeFunc = function fullSizeFunc() {
+                        if (elFactor < wFactor) {
+
+                            var elH = wW / elFactor,
+                                elTop = (elH - wH) / 2;
+                            el.css({ width: wW, height: elH, top: -elTop, left: '0' });
+                        } else {
+
+                            var elW = wH * elFactor,
+                                elLeft = (elW - wW) / 2;
+                            el.css({ height: wH, width: elW, left: -elLeft, top: '0' });
+                        }
+
+                        if (p.veticalAlign == 'top') {
+                            el.css({ top: 0, bottom: 'auto' });
+                        }
+                        if (p.veticalAlign == 'bottom') {
+                            el.css({ top: 'auto', bottom: '0' });
+                        }
+                        if (p.align == 'left') {
+                            el.css({ right: 'auto', left: '0' });
+                        }
+                        if (p.align == 'right') {
+                            el.css({ left: 'auto', right: '0' });
+                        }
+                    };
+                    elClone.remove();
+                    fullSizeFunc();
+                    el.fadeTo(500, 1);
+                    $(window).on('resize redraw', function () {
+                        wW = parent.width();
+                        wH = parent.height();
+                        wFactor = wW / wH;
+                        fullSizeFunc();
+                    });
+                });
+            }
+        };
+        $.fn.liCover = function (method) {
+            if (methods[method]) {
+                return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
+            } else if ((typeof method === 'undefined' ? 'undefined' : _typeof(method)) === 'object' || !method) {
+                return methods.init.apply(this, arguments);
+            } else {
+                $.error('Метод ' + method + ' в jQuery.liCover не существует');
+            }
+        };
+    })(jQuery);
+
+    // ресайз изображений в окне с задаными размерами
+    if ($('.js-img-cover').length) {
+        $('.js-img-cover').liCover({
+            parent: $('.wrap-img'),
+            position: 'absolute'
+        });
+    }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(2), __webpack_require__(2)))
 
 /***/ })
 /******/ ]);

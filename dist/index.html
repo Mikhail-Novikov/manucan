@@ -9,6 +9,22 @@
     <meta name="keywords" content="" />
     <meta name="author" content="" />
     <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#161b6e">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <!-- CSS-->
     <link rel="stylesheet" href="css/lib.css" />
     <link rel="stylesheet" href="css/app.css" />
@@ -33,7 +49,7 @@
   </head>
   <body class="page__body">
     <div class="page__body-inner">
-      <header class="header">
+      <header class="header header header--gray">
         <div class="header__inner container-fluid mw-lg">
           <button class="header__toggle">
             <span class="header__toggle-icon"></span>
@@ -45,16 +61,28 @@
             <nav class="menu header__menu">
               <div class="menu__inner">
                 <div class="menu__item menu__item--current">
-                  <a class="menu__link" href="">Обо Мне</a>
+                  <a class="menu__link" href="#about">Обо Мне</a>
                 </div>
                 <div class="menu__item">
-                  <a class="menu__link" href="">Проекты</a>
+                  <a class="menu__link" href="#events">Проекты</a>
                 </div>
                 <div class="menu__item">
-                  <a class="menu__link" href="">Блог</a>
+                  <a class="menu__link" href="#blog">Блог</a>
                 </div>
-                <div class="menu__item">
-                  <a class="menu__link" href="">Свяжитесь со мной</a>
+                <div class="menu__item d-flex d-md-none">
+                  <a class="menu__link" href="">В СМИ </a>
+                </div>
+                <div class="menu__item d-flex d-md-none">
+                  <a class="menu__link" href="">Фото </a>
+                </div>
+                <div class="menu__item d-flex d-md-none">
+                  <a class="menu__link" href="">Мероприятия </a>
+                </div>
+                <div class="menu__item d-flex d-md-none">
+                  <a class="menu__link" href="">Контакты</a>
+                </div>
+                <div class="menu__item d-none d-md-flex">
+                  <a class="menu__link" href="#contact">Свяжитесь со мной</a>
                 </div>
               </div>
             </nav>
@@ -105,29 +133,27 @@
             </a>
           </div>
         </section>
-        <section class="section section--about">
-          <div class="container">
-            <h2 class="section__title d-inline-block mb-50">Обо мне</h2>
-            <span class="section__ref">
-              <a class="section__ref section__ref--blue ml-50 d-inline-block" href="#">Подробнее
-                <svg class="icon-svg-angle-right align-middle section__title-icon section__title-icon--next" role="img">
-                  <use xlink:href="#icon-svg-angle-right"></use>
-                </svg>
-              </a>
-            </span>
-            <p class="section__text section__text--gray mb-30">Место работы</p>
-            <div class="row mb-45">
+        <section class="section section--about" id="about">
+          <div class="container pl-30 pr-30 pl-sm-15 pr-sm-15">
+            <h2 class="section__title section__title--red">Обо мне</h2>
+            <a class="section__ref section__ref--blue ml-5 ml-sm-50" href="#">Подробнее
+              <svg class="icon-svg-angle-right align-middle section__title-icon section__title-icon--next" role="img">
+                <use xlink:href="#icon-svg-angle-right"></use>
+              </svg>
+            </a>
+            <div class="row mb-15 mb-sm-45">
               <div class="col-sm-8">
-                <div class="mb-45">
-                  <P class="mb-20"> Куратор рабочей группы Экспертного совета по цифровой экономике и блокчейн технологиям при Государственной Думе РФ.</P>
-                  <P class="mb-20"> Руководитель проекта по развитию цифровых услуг в Российском экспортном центре.</P>
+                <p class="section__text section__text--gray mb-30 mt-30 mt-sm-0">Место работы</p>
+                <div class="mb-0 mb-sm-45">
+                  <P class="mb-15"> Куратор рабочей группы Экспертного совета по цифровой экономике и блокчейн технологиям при Государственной Думе РФ.</P>
+                  <P class="mb-15"> Руководитель проекта по развитию цифровых услуг в Российском экспортном центре.</P>
                 </div>
-                <div class="separator">
+                <div class="separator d-none d-sm-block">
                   <div class="separator__sep separator__sep--h"></div>
                 </div>
               </div>
-              <div class="col-sm-4">
-                <div class="oval-img">
+              <div class="col-sm-4 d-none d-sm-block">
+                <div class="oval-img mt-40">
                   <img class="oval-img__fhoto" src="img/contents/Armen-Manukyan-1.png" alt="Армен Манукян" title="Армен Манукян" />
                   <div class="oval-img__overlay"></div>
                 </div>
@@ -142,16 +168,373 @@
             </ul>
           </div>
         </section>
+        <section class="section section--smi">
+          <div class="container">
+            <h2 class="section__title section__title--red">В СМИ</h2>
+            <div class="section__ref">
+              <a class="section__ref section__ref--blue ml-5 ml-sm-50" href="#">Больше материалов
+                <svg class="icon-svg-angle-right align-middle section__title-icon section__title-icon--next" role="img">
+                  <use xlink:href="#icon-svg-angle-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="slider slider-three swiper-container">
+            <div class="swiper-wrapper mb-30 mb-sm-0 pb-40 pb-sm-90">
+              <div class="swiper-slide animate-top-offset">
+                <a class="link-block d-block pt-40 pt-sm-50" href="#">
+                  <h3 class="link-block__title mb-25 mb-sm-40">shiptor.ru</h3>
+                  <p class="link-block__text">«Наша работа — помогать российским компаниям выходить на международный рынок интернет-торговли»
+                    <span class="link-block__arr d-block">
+                      <svg class="icon-svg-link-arrow" role="img">
+                        <use xlink:href="#icon-svg-link-arrow"></use>
+                      </svg>
+                    </span>
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide animate-top-offset">
+                <a class="link-block d-block pt-40 pt-sm-50" href="#">
+                  <h3 class="link-block__title mb-25 mb-sm-40">vc.ru</h3>
+                  <p class="link-block__text">Как прошла конференция «Экспорт»
+                    <span class="link-block__arr d-block">
+                      <svg class="icon-svg-link-arrow" role="img">
+                        <use xlink:href="#icon-svg-link-arrow"></use>
+                      </svg>
+                    </span>
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide animate-top-offset">
+                <a class="link-block d-block pt-40 pt-sm-50" href="#">
+                  <h3 class="link-block__title mb-25 mb-sm-40">meyou.ru</h3>
+                  <p class="link-block__text">«Всегда есть люди, которые готовы заниматься экспортом. Профессионалов много, ваша задача их найти»
+                    <span class="link-block__arr d-block">
+                      <svg class="icon-svg-link-arrow" role="img">
+                        <use xlink:href="#icon-svg-link-arrow"></use>
+                      </svg>
+                    </span>
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide animate-top-offset">
+                <a class="link-block d-block pt-40 pt-sm-50" href="#">
+                  <h3 class="link-block__title mb-25 mb-sm-40">shiptor.ru</h3>
+                  <p class="link-block__text">«Наша работа — помогать российским компаниям выходить на международный рынок интернет-торговли»
+                    <span class="link-block__arr d-block">
+                      <svg class="icon-svg-link-arrow" role="img">
+                        <use xlink:href="#icon-svg-link-arrow"></use>
+                      </svg>
+                    </span>
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide animate-top-offset">
+                <a class="link-block d-block pt-40 pt-sm-50" href="#">
+                  <h3 class="link-block__title mb-25 mb-sm-40">vc.ru</h3>
+                  <p class="link-block__text">Как прошла конференция «Экспорт»
+                    <span class="link-block__arr d-block">
+                      <svg class="icon-svg-link-arrow" role="img">
+                        <use xlink:href="#icon-svg-link-arrow"></use>
+                      </svg>
+                    </span>
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide animate-top-offset">
+                <a class="link-block d-block pt-40 pt-sm-50" href="#">
+                  <h3 class="link-block__title mb-25 mb-sm-40">meyou.ru</h3>
+                  <p class="link-block__text">«Всегда есть люди, которые готовы заниматься экспортом. Профессионалов много, ваша задача их найти»
+                    <span class="link-block__arr d-block">
+                      <svg class="icon-svg-link-arrow" role="img">
+                        <use xlink:href="#icon-svg-link-arrow"></use>
+                      </svg>
+                    </span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+        <section class="section section--events" id="events">
+          <div class="container">
+            <h2 class="section__title section__title--red section__title section__title--w545">МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ</h2>
+            <span class="section__ref">
+              <a class="section__ref section__ref--blue ml-5 ml-sm-50" href="#">Больше мероприятий
+                <svg class="icon-svg-angle-right align-middle section__title-icon section__title-icon--next" role="img">
+                  <use xlink:href="#icon-svg-angle-right"></use>
+                </svg>
+              </a>
+            </span>
+          </div>
+          <div class="slider-l slider-three swiper-container pt-0 pt-sm-20">
+            <div class="swiper-wrapper mb-30 mb-sm-0 pb-55">
+              <div class="swiper-slide">
+                <a class="event-block d-block animate-top-offset" href="#">
+                  <img class="event-block__img" src="img/events/ev1.png" alt="МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ" title="" />
+                  <div class="p-xss-30 pt-10">
+                    <h4 class="event-block__title mb-20">«Экспорт» — конференция vc.ru</h4>
+                    <i class="date d-block mb-20 mb-xss-40">22 мая 2018</i>
+                    <span class="event-block__arr d-block">
+                      <svg class="icon-svg-link-arrow" role="img">
+                        <use xlink:href="#icon-svg-link-arrow"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="event-block d-block animate-top-offset" href="#">
+                  <img class="event-block__img" src="img/events/ev2.png" alt="МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ" title="" />
+                  <div class="p-xss-30 pt-10">
+                    <h4 class="event-block__title mb-20">Красноярский экономический форум</h4>
+                    <i class="date d-block mb-20 mb-xss-40">13 июня 2018</i>
+                    <span class="event-block__arr d-block">
+                      <svg class="icon-svg-link-arrow" role="img">
+                        <use xlink:href="#icon-svg-link-arrow"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="event-block d-block animate-top-offset" href="#">
+                  <img class="event-block__img" src="img/events/ev3.png" alt="МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ" title="" />
+                  <div class="p-xss-30 pt-10">
+                    <h4 class="event-block__title mb-20">Взрывные продажи 6.0</h4>
+                    <i class="date d-block mb-20 mb-xss-40">19 октября 2018</i>
+                    <span class="event-block__arr d-block">
+                      <svg class="icon-svg-link-arrow" role="img">
+                        <use xlink:href="#icon-svg-link-arrow"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="event-block d-block animate-top-offset" href="#">
+                  <img class="event-block__img" src="img/events/ev2.png" alt="МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ" title="" />
+                  <div class="p-xss-30 pt-10">
+                    <h4 class="event-block__title mb-20">Красноярский экономический форум</h4>
+                    <i class="date d-block mb-20 mb-xss-40">13 июня 2018</i>
+                    <span class="event-block__arr d-block">
+                      <svg class="icon-svg-link-arrow" role="img">
+                        <use xlink:href="#icon-svg-link-arrow"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="event-block d-block animate-top-offset" href="#">
+                  <img class="event-block__img" src="img/events/ev3.png" alt="МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ" title="" />
+                  <div class="p-xss-30 pt-10">
+                    <h4 class="event-block__title mb-20">Взрывные продажи 6.0</h4>
+                    <i class="date d-block mb-20 mb-xss-40">19 октября 2018</i>
+                    <span class="event-block__arr d-block">
+                      <svg class="icon-svg-link-arrow" role="img">
+                        <use xlink:href="#icon-svg-link-arrow"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+        <section class="section section--banner">
+          <div class="section__banner_overlay"></div>
+          <div class="container">
+            <div class="section__banner_wrap mb-60 mb-xss-80">
+              <h2 class="section__title section__title--white mb-25">ВЗРЫВНЫЕ ПРОДАЖИ 6.0 19 ОКТЯРБЯ 2018</h2>
+              <div class="section__text section__text--white">Главная образовательная и коммуникационная площадка в сфере маркетинга и продаж</div>
+            </div>
+            <a class="btn-red align-top" href="#">Присоединиться</a>
+          </div>
+        </section>
+        <section class="section section--fhoto">
+          <div class="container">
+            <h2 class="section__title section__title--red section__title section__title--w545">ФОТОПОТОК</h2>
+            <div class="section__ref">
+              <a class="section__ref section__ref--blue ml-5 ml-sm-50" href="#">Больше фото
+                <svg class="icon-svg-angle-right align-middle section__title-icon section__title-icon--next" role="img">
+                  <use xlink:href="#icon-svg-angle-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="container pt-0 pt-sm-20">
+            <div class="slider slider-fhour-row2 swiper-container">
+              <div class="swiper-wrapper mb-30 mb-sm-0 pb-35 pb-sm-75">
+                <div class="swiper-slide animate-top-offset animate-scale">
+                  <a class="fhoto-block d-block text-center" href="#">
+                    <img class="fhoto-block__img" src="img/fhoto/f1.png" alt="МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ" title="" />
+                  </a>
+                </div>
+                <div class="swiper-slide animate-top-offset animate-scale">
+                  <a class="fhoto-block d-block text-center" href="#">
+                    <img class="fhoto-block__img" src="img/fhoto/f2.png" alt="МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ" title="" />
+                  </a>
+                </div>
+                <div class="swiper-slide animate-top-offset animate-scale">
+                  <a class="fhoto-block d-block text-center" href="#">
+                    <img class="fhoto-block__img" src="img/fhoto/f3.png" alt="МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ" title="" />
+                  </a>
+                </div>
+                <div class="swiper-slide animate-top-offset animate-scale">
+                  <a class="fhoto-block d-block text-center" href="#">
+                    <img class="fhoto-block__img" src="img/fhoto/f4.png" alt="МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ" title="" />
+                  </a>
+                </div>
+                <div class="swiper-slide animate-top-offset animate-scale">
+                  <a class="fhoto-block d-block text-center" href="#">
+                    <img class="fhoto-block__img" src="img/fhoto/f5.png" alt="МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ" title="" />
+                  </a>
+                </div>
+                <div class="swiper-slide animate-top-offset animate-scale">
+                  <a class="fhoto-block d-block text-center" href="#">
+                    <img class="fhoto-block__img" src="img/fhoto/f6.png" alt="МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ" title="" />
+                  </a>
+                </div>
+                <div class="swiper-slide animate-top-offset animate-scale">
+                  <a class="fhoto-block d-block text-center" href="#">
+                    <img class="fhoto-block__img" src="img/fhoto/f7.png" alt="МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ" title="" />
+                  </a>
+                </div>
+                <div class="swiper-slide animate-top-offset animate-scale">
+                  <a class="fhoto-block d-block text-center" href="#">
+                    <img class="fhoto-block__img" src="img/fhoto/f8.png" alt="МЕРОПРИЯТИЯ С МОИМ УЧАСТИЕМ" title="" />
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <section class="section section--blog" id="blog">
+          <div class="container">
+            <h2 class="section__title section__title--red section__title section__title--w545">БЛОГ</h2>
+            <span class="section__ref">
+              <a class="section__ref section__ref--blue ml-5 ml-sm-50" href="#">Больше статей
+                <svg class="icon-svg-angle-right align-middle section__title-icon section__title-icon--next" role="img">
+                  <use xlink:href="#icon-svg-angle-right"></use>
+                </svg>
+              </a>
+            </span>
+          </div>
+          <div class="oval__fon">
+            <div class="slider slider-one swiper-container pt-0 pt-sm-20">
+              <div class="swiper-wrapper pb-55 pb-sm-75">
+                <div class="swiper-slide">
+                  <div class="blog-item d-block animate-top-offset">
+                    <div class="blog-item__wrap">
+                      <img class="blog-item__img" src="img/blog/blog.png" alt="Манукян" title="" />
+                      <h4 class="blog-item__title">20 трендов e-commerce</h4>
+                      <p class="blog-item__text">Это не красный диплом, это только что подписанное соглашение о сотрудничестве с крупнейшим в Китае маркетплейсом Tmall. Всем привет из солнечного Шанхая! По данным Media Lounge 71% покупателей идут за покупками в онлайн, потому что
+                        так удобнее… </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="blog-item d-block animate-top-offset">
+                    <div class="blog-item__wrap">
+                      <img class="blog-item__img" src="img/blog/blog.png" alt="Манукян" title="" />
+                      <h4 class="blog-item__title">20 трендов e-commerce</h4>
+                      <p class="blog-item__text">Это не красный диплом, это только что подписанное соглашение о сотрудничестве с крупнейшим в Китае маркетплейсом Tmall. Всем привет из солнечного Шанхая! По данным Media Lounge 71% покупателей идут за покупками в онлайн, потому что
+                        так удобнее… </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="blog-item d-block animate-top-offset">
+                    <div class="blog-item__wrap">
+                      <img class="blog-item__img" src="img/blog/blog.png" alt="Манукян" title="" />
+                      <h4 class="blog-item__title">20 трендов e-commerce</h4>
+                      <p class="blog-item__text">Это не красный диплом, это только что подписанное соглашение о сотрудничестве с крупнейшим в Китае маркетплейсом Tmall. Всем привет из солнечного Шанхая! По данным Media Lounge 71% покупателей идут за покупками в онлайн, потому что
+                        так удобнее… </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="blog-item d-block animate-top-offset">
+                    <div class="blog-item__wrap">
+                      <img class="blog-item__img" src="img/blog/blog.png" alt="Манукян" title="" />
+                      <h4 class="blog-item__title">20 трендов e-commerce</h4>
+                      <p class="blog-item__text">Это не красный диплом, это только что подписанное соглашение о сотрудничестве с крупнейшим в Китае маркетплейсом Tmall. Всем привет из солнечного Шанхая! По данным Media Lounge 71% покупателей идут за покупками в онлайн, потому что
+                        так удобнее… </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <section class="section section--contacts" id="contact">
+          <div class="container">
+            <h2 class="section__title section__title--red">КОНТАКТЫ</h2>
+            <div class="row pt-0 pt-sm-25">
+              <div class="col-sm-5 text-center text-sm-left mb-55">
+                <div class="mb-60 mt-5">
+                  <p class="section__text section__text--gray mb-5 mb-xss-30">Электронная почта</p>
+                  <a class="section__link p" href="mailto: hello@manucan.ru">hello@manucan.ru</a>
+                </div>
+                <p class="section__text section__text--gray mb-35">Социальные сети</p>
+                <div class="societ justify-content-center justify-content-sm-start">
+                  <a class="societ__item societ__item--tweeter" href="#" target="_blank" title="tweeter">
+                    <svg class="icon-svg-tweeter" role="img">
+                      <use xlink:href="#icon-svg-tweeter"></use>
+                    </svg>
+                  </a>
+                  <a class="societ__item societ__item--inst" href="#" target="_blank" title="instagramm">
+                    <svg class="icon-svg-inst" role="img">
+                      <use xlink:href="#icon-svg-inst"></use>
+                    </svg>
+                  </a>
+                  <a class="societ__item societ__item--f" href="#" target="_blank" title="facebook">
+                    <svg class="icon-svg-f" role="img">
+                      <use xlink:href="#icon-svg-f"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-7">
+                <form class="form-contacts section__form" action="">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <input class="field w-100" type="text" placeholder="Ваше имя" name="nic" />
+                    </div>
+                    <div class="col-sm-6">
+                      <input class="field w-100" type="text" placeholder="Email" name="email" />
+                    </div>
+                  </div>
+                  <div class="row mb-0">
+                    <div class="col-sm-12">
+                      <textarea class="field w-100" placeholder="Сообщение"></textarea>
+                    </div>
+                  </div>
+                  <p class="form-contacts__info small">*Нажимая кнопку «Отправить», вы принимаете условия «Политики обработки персональных данных»</p>
+                  <div class="form-contacts__contacts_btn mt-20">
+                    <input class="btn-red" type="submit" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="mb-sm-70"></div>
       </div>
       <footer class="footer">
         <div class="footer__inner-top container-fluid mw-lg">
           <div class="row">
-            <div class="col-2 d-flex flex-column flex-lg-row align-items-lg-center justify-content-between">
-              <div class="footer__logo">MANUCAN</div>
+            <div class="col-lg-2 d-flex flex-column flex-lg-row align-items-center justify-content-between">
+              <div class="footer__logo mb-20 mb-lg-0">MANUCAN</div>
             </div>
-            <div class="col-8 d-lg-flex align-items-lg-center justify-content-end">
+            <div class="col-lg-8 col-md-9 d-flex align-items-center justify-content-lg-center justify-content-md-start justify-content-center">
               <nav class="footer__menu">
-                <div class="footer__menu-inner">
+                <div class="footer__menu-inner flex-xss-row">
                   <a class="footer__menu-item" href="">Обо мне</a>
                   <a class="footer__menu-item" href="">Проекты</a>
                   <a class="footer__menu-item" href="">Блог</a>
@@ -162,27 +545,27 @@
                 </div>
               </nav>
             </div>
-            <div class="col-2 d-flex flex-column flex-lg-row align-items-lg-center justify-content-end">
+            <div class="col-lg-2 col-md-3 d-flex flex-column flex-lg-row align-items-lg-center justify-content-end">
               <div class="footer__soc-net">
                 <div class="footer__soc-net-inner">
-                  <a class="footer__soc-net-item footer__soc-net-item--vk" href="" target="_blank" title="VK">
-                    <svg class="icon-svg-vk" role="img">
-                      <use xlink:href="#icon-svg-vk"></use>
+                  <a class="footer__soc-net-item footer__soc-net-item--tw" href="" target="_blank" title="tweeter">
+                    <svg class="icon-svg-tweeter" role="img">
+                      <use xlink:href="#icon-svg-tweeter"></use>
                     </svg>
                   </a>
-                  <a class="footer__soc-net-item footer__soc-net-item--fb" href="" target="_blank" title="Facebook">
-                    <svg class="icon-svg-fb" role="img">
-                      <use xlink:href="#icon-svg-fb"></use>
+                  <a class="footer__soc-net-item footer__soc-net-item--inst" href="" target="_blank" title="instagramm">
+                    <svg class="icon-svg-inst" role="img">
+                      <use xlink:href="#icon-svg-inst"></use>
                     </svg>
                   </a>
-                  <a class="footer__soc-net-item footer__soc-net-item--tw" href="" target="_blank" title="Twitter">
-                    <svg class="icon-svg-tw" role="img">
-                      <use xlink:href="#icon-svg-tw"></use>
+                  <a class="footer__soc-net-item footer__soc-net-item--f" href="" target="_blank" title="facebook">
+                    <svg class="icon-svg-f" role="img">
+                      <use xlink:href="#icon-svg-f"></use>
                     </svg>
                   </a>
-                  <a class="footer__soc-net-item footer__soc-net-item--tw" href="" target="_blank" title="Twitter">
-                    <svg class="icon-svg-tw" role="img">
-                      <use xlink:href="#icon-svg-tw"></use>
+                  <a class="footer__soc-net-item footer__soc-net-item--mail" href="" target="_blank" title="mail">
+                    <svg class="icon-svg-mail-logo" role="img">
+                      <use xlink:href="#icon-svg-mail-logo"></use>
                     </svg>
                   </a>
                 </div>

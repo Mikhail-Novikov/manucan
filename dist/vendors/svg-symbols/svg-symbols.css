@@ -25,7 +25,7 @@
 }
 
 .icon-svg-angle-right {
-  width: 0.5em;
+  width: 0.6em;
   height: 1em;
 }
 
@@ -51,12 +51,30 @@
   
 }
 
+.icon-svg-doc-pdf {
+  width: 0.7407407407407407em;
+  height: 1em;
+}
+
+#icon-svg-doc-pdf {
+  
+}
+
 .icon-svg-f {
   width: 1em;
   height: 1em;
 }
 
 #icon-svg-f {
+  
+}
+
+.icon-svg-fb-btn {
+  width: 1em;
+  height: 1em;
+}
+
+#icon-svg-fb-btn {
   
 }
 
@@ -75,6 +93,15 @@
 }
 
 #icon-svg-inst {
+  
+}
+
+.icon-svg-link-go {
+  width: 1em;
+  height: 1em;
+}
+
+#icon-svg-link-go {
   
 }
 
