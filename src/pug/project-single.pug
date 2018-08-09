@@ -1,0 +1,64 @@
+include lib/variables
+include lib/mixins
+include blocks/page
+include blocks/header
+include blocks/breadcrumb
+include blocks/footer
+
++page(pagesList.about.title)
+	+header('header--innerpage')
+	+b.SECTION.section--breadcrumbs.mb-sm-40
+		.container
+			.row
+				.offset-xss-2.col-sm-10
+					+e.H1.__title--red.text-uppercase ПРОЕКТЫ
+					+breadcrumb([pagesList.project_single])
+
+
+	+b.SECTION.section--content
+		+b.__wrap--content
+			+e.H2.title_innerpage--black.text-center.mb-30 Курс «Возможности онлайн-торговли для экспортёров»
+
+			+e.A(href="#").__ref--blue.mb-50
+				+icon-svg('link-go').align-middle
+				span.d-inline-block Подробнее о курсе
+
+			p Я разработал курс о том, как с помощью онлайн-каналов продаж вы можете повысить прибыльность вашего экспортного проекта и привлечь новых иностранных покупателей, получив доступ к аудитории зарубежных интернет-магазинов.
+
+		+b.__wrap--video
+			img.h-100(src="img/poster-video.png", alt="")
+
+
+
+	+b.SECTION.section--nav
+		.container.d-flex.text-center.justify-content-between
+
+			+e.A(href="#").__ref--blue.ml-15 
+				span.d-none.d-sm-inline-block Следующий проект
+				+icon-svg('angle-right').__title-icon--next.__nav-icon--left
+
+
+			+e.A(href="#").__ref--blue.ml-5.mr-5 Все проекты
+
+
+			+e.A(href="#").__ref--blue 
+				span.d-none.d-sm-inline-block Предыдущий проект
+				+icon-svg('angle-right').align-middle.__title-icon--next
+
+
+	+b.SECTION.section--fb
+		+e.__banner_overlay
+		.container
+			.row.justify-content-center.mt-20.mb-20
+				.justify-content-right.d-flex.mr-xss-35.mr-0
+					+e.__banner_wrap
+						+e.H4.__title--white.m-0.mb-40.mb-sm-0 МОЯ СТРАНИЦА НА FACEBOOK
+
+				.justify-content-left
+					+b.A(href="#").btn-red.align-top Подписаться
+						+icon-svg('fb-btn').d-inline-block.align-middle
+
+
+
+
+	+footer 

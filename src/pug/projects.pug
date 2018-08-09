@@ -1,0 +1,66 @@
+include lib/variables
+include lib/mixins
+include blocks/page
+include blocks/header
+include blocks/breadcrumb
+include blocks/footer
+
++page(pagesList.projects.title)
+	+header('header--innerpage')
+	+b.SECTION.section--breadcrumbs.mb-sm-40
+		.container
+			.row
+				.offset-xss-2.col-sm-10
+					+e.H1.__title--red.text-uppercase ПРОЕКТЫ
+					+breadcrumb([pagesList.projects])
+
+
+	+b.SECTION.section--content.pattern
+		.container
+			.row
+				.offset-md-2.col-md-10.offset-xss-1.col-xss-10
+					+b.project-block.row.animate-top-offset
+						+e.__wrap_pic.col-sm.wrap-img
+							+e.IMG(src="img/projects/p1.jpg", alt="").__img.js-img-cover
+						+e.A(href="#").__wrap_content.col-sm
+							+e.P.text Курс «Возможности онлайн-торговли для экспортёров»
+
+							+e.ref Подробнее
+								+icon-svg('angle-right').align-middle
+
+
+
+					+b.project-block.row.animate-top-offset
+						+e.__wrap_pic.col-sm.wrap-img
+							+e.IMG(src="img/projects/p2.jpg", alt="").__img.js-img-cover
+						+e.A(href="#").__wrap_content.col-sm
+							+e.P.text Household Retail Russia
+
+							+e.ref Подробнее
+								+icon-svg('angle-right').align-middle
+
+					+b.project-block.row.animate-top-offset
+						+e.__wrap_pic.col-sm.wrap-img
+							+e.IMG(src="img/projects/p3.jpg", alt="").__img.js-img-cover
+						+e.A(href="#").__wrap_content.col-sm
+							+e.P.text Сотрудничест-во с Tmall
+
+							+e.ref Подробнее
+								+icon-svg('angle-right').align-middle
+
+	+b.SECTION.section--fb
+		+e.__banner_overlay
+		.container
+			.row.justify-content-center.mt-20.mb-20
+				.justify-content-right.d-flex.mr-xss-35.mr-0
+					+e.__banner_wrap
+						+e.H4.__title--white.m-0.mb-40.mb-sm-0 МОЯ СТРАНИЦА НА FACEBOOK
+
+				.justify-content-left
+					+b.A(href="#").btn-red.align-top Подписаться
+						+icon-svg('fb-btn').d-inline-block.align-middle
+
+
+
+
+	+footer 

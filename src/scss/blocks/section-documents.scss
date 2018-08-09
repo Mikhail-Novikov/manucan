@@ -1,0 +1,126 @@
+.section--documents{
+	position: relative;
+	margin-top: 230px;
+	padding-top: 0;	
+		&:after{
+		content: '';
+    	background: url-img('about/pattern.png') repeat;
+    	height: 300px;
+    	width: 290px;
+    	border-radius: 50%;
+		display: block;
+		position: absolute;
+		top: -200px;
+		right: 50%;
+		margin-right: -200px;
+		z-index: -1;
+    }
+	@include media-breakpoint-up(sm) {
+		margin-top: auto;
+		&:after{
+			top: -350px;
+			right: -15%;
+	    	height: 650px;
+	    	width: 50%;	
+	    	margin-right: auto;
+    	}			
+	} 
+
+}
+
+.doc_item {
+	
+	display: inline-block;
+	margin-bottom: 0;
+	.icon-svg-doc-pdf{
+		float: left;
+		vertical-align: top;
+		color: #fff;
+		font-size: 27px;
+		margin-top: 4px;
+	}
+	&_text{
+		display: inline-block;
+		vertical-align: top;
+		width: 88%;	
+		padding: 0 15px;
+			
+	}
+	&__doc_text{
+		font-family: "Montserrat";
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 20px;
+		&:first-child{
+			margin-bottom: 10px;
+		}		
+		&--white{
+			color: #fff;
+		}
+		&--gray{
+			color: #9b9b9b;
+		}
+
+	}
+
+	@include media-breakpoint-up(sm) {
+
+		&_text{
+			width: 92%;
+			padding: 0 40px;					
+		}				
+	} 	
+
+}
+
+
+.section__doc{
+	max-width: 965px;
+	width: calc(100% - 10px);
+	padding: 60px 35px 30px 40px;
+	margin: 0 auto;
+	box-shadow: 0 40px 90px rgba(88, 90, 112, 0.5);
+	background-image: linear-gradient(217deg, #e86656 0%, #002ca6 100%);
+	position: relative;
+	z-index: 10;
+
+	&:before{
+		content: '';
+    	background: url-img('about/armen-3.png') no-repeat;
+		background-size: 220px;    	
+    	height: 320px;
+    	width: 210px;
+		display: block;
+		position: absolute;
+		top: -320px;
+		right: 50%;
+		margin-right: -105px;
+		z-index: 3;
+    }
+
+
+	@include media-breakpoint-up(sm) {
+		padding: 60px 35px 60px 100px;		
+		&:before{
+			top: -500px;
+	    	height: 500px;	
+	    	width: 450px;		
+			right: -100px;
+			background-size: 320px;
+			margin-right: auto;
+	    }
+
+	} 
+
+	@include media-breakpoint-up(md) {
+		&:before{
+			top: -650px;
+	    	height: 650px;			
+			right: -30px;
+			background-size: 436px;	
+			margin-right: auto;					
+	    }
+
+	}
+
+}

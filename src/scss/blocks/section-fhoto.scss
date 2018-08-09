@@ -1,0 +1,17 @@
+.section--fhoto{
+	.fhoto-block{
+		width: 100%;
+		min-height: 200px;
+	}
+	.container:first-child{
+		max-width: 875px;
+	}
+
+	@include media-breakpoint-up(sm) {
+		.fhoto-block{
+			width: 269px;
+			height: 200px;
+			margin: 0 auto;
+		}
+	}
+}

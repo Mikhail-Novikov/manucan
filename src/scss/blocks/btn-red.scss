@@ -1,0 +1,32 @@
+.btn-red {
+  --scale: 1;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  padding: calc-size(18) calc-size(38);
+  border: 0;
+  box-shadow: 0 10px 50px rgba(236, 90, 79, 0.7);
+  background-color: #ec5a4f;
+  border-radius: calc-size(26);
+  position: relative;
+  z-index: 1;
+  transition: $transition-color;
+
+  @include media-breakpoint-down(sm) {
+    padding: calc-size(12) calc-size(48);
+  }
+  &:hover{
+    background-color: #ff746a;
+  }
+}
+
